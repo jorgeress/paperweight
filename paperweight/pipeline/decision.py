@@ -1,3 +1,5 @@
+from typing import Literal
+
 from pydantic import BaseModel, Field
 
 from paperweight.policy.action import ProposedAction
@@ -5,6 +7,9 @@ from paperweight.policy.task import Grant, OperatorTask
 from paperweight.policy.verdict import Verdict
 from paperweight.provenance.observation import Observation
 from paperweight.reasoning_check.review import ReasoningReview
+
+# note: no-defense and hijacked-planner exist to film the before/after, never for real sorting
+type PipelineMode = Literal["paperweight", "no-defense", "hijacked-planner"]
 
 
 class StageCost(BaseModel):
@@ -27,6 +32,7 @@ class Decision(BaseModel):
     at: str
     frame_sha: str
     task: OperatorTask
+    pipeline: PipelineMode = "paperweight"
     observations: list[Observation] = []
     judged: list[JudgedAction] = []
     reasoning: str = ""

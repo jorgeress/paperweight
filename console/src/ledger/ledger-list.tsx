@@ -16,7 +16,9 @@ export const LedgerList = ({ decisions, selectedId, onSelect }: Props) => (
             <span className="mono muted">{d.at.slice(11, 19)}</span>
             <span className={`tag tag-${outcome}`}>{outcome}</span>
             <span className="mono">{d.commands.join("+")}</span>
-            <span className="mono muted ellipsis">{rule}</span>
+            {d.pipeline === "paperweight"
+              ? <span className="mono muted ellipsis">{rule}</span>
+              : <span className="mono ellipsis demo-pipeline">{d.pipeline} {rule}</span>}
           </li>
         );
       })}

@@ -55,6 +55,7 @@ export type Decision = {
   at: string;
   frame_sha: string;
   task: OperatorTask;
+  pipeline: "paperweight" | "no-defense" | "hijacked-planner";
   observations: Observation[];
   judged: JudgedAction[];
   reasoning: string;

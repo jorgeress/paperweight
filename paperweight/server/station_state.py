@@ -6,8 +6,8 @@ from pathlib import Path
 from paperweight.camera.capture import capture_frame
 from paperweight.ledger.log import append_decision, read_decisions
 from paperweight.outcome import Err, Ok, Outcome
-from paperweight.pipeline.decision import Decision
-from paperweight.pipeline.modes import PipelineMode, decide_in_mode
+from paperweight.pipeline.decision import Decision, PipelineMode
+from paperweight.pipeline.modes import decide_in_mode
 from paperweight.policy.task import Grant, OperatorTask
 from paperweight.station.execute import execute_decision
 from paperweight.station.link import SerialLink, SimulatedLink, StationLink
@@ -46,12 +46,12 @@ class StationState:
             return frame
         return self.decide(frame.value)
 
-    def decide(self, frame_jpeg: bytes) -> Outcome[Decision]:
+    def decide(self, frame_jpeg: bytes, mode: PipelineMode | None = None) -> Outcome[Decision]:
         # note: one parcel at a time, the tray holds a single parcel
         if not self.deciding.acquire(blocking=False):
             return Err("a decision is already running")
         try:
-            decision = decide_in_mode(frame_jpeg, self.task, self.mode, second_layer=self.second_layer)
+            decision = decide_in_mode(frame_jpeg, self.task, mode or self.mode, second_layer=self.second_layer)
             FRAMES_DIR.mkdir(exist_ok=True)
             (FRAMES_DIR / f"{decision.frame_sha}.jpg").write_bytes(frame_jpeg)
             sent = execute_decision(decision, self.link)

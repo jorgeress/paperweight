@@ -14,27 +14,31 @@ export const App = () => {
     useStation();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [focusId, setFocusId] = useState<string | null>(null);
+  const [visitorPipeline, setVisitorPipeline] = useState<PipelineMode>("paperweight");
   const upload = useRef<HTMLInputElement>(null);
 
   if (!state) return <div className="boot mono">connecting to station...</div>;
   const decision = state.decisions.find((d) => d.id === selectedId) ?? state.decisions.at(-1);
+  // note: in the public demo the pipeline is per visitor, the server state is shared
+  const pipeline = state.public ? visitorPipeline : state.pipeline;
+  const pickPipeline = (mode: PipelineMode) => (state.public ? setVisitorPipeline(mode) : void choosePipeline(mode));
 
   return (
     <div className="shell">
       <StatusBar state={state} />
       <div className="controls">
-        <SamplePicker onPick={decideSample} isDisabled={isDeciding} />
+        <SamplePicker onPick={(id) => void decideSample(id, pipeline)} isDisabled={isDeciding} />
+        <select className={`mono pipeline pipeline-${pipeline}`} value={pipeline}
+          onChange={(e) => pickPipeline(e.target.value as PipelineMode)}>
+          <option value="paperweight">pipeline: paperweight</option>
+          <option value="no-defense">pipeline: no defense (demo)</option>
+          <option value="hijacked-planner">pipeline: hijacked planner (demo)</option>
+        </select>
         {!state.public && (
           <>
             <button onClick={() => requestDecision()} disabled={isDeciding}>{isDeciding ? "Deciding..." : "Capture and decide"}</button>
             {state.station === "simulated" && <button onClick={simulateArrival} disabled={isDeciding}>Simulate arrival</button>}
             <button onClick={() => upload.current?.click()} disabled={isDeciding}>Upload frame</button>
-            <select className={`mono pipeline pipeline-${state.pipeline}`} value={state.pipeline}
-              onChange={(e) => void choosePipeline(e.target.value as PipelineMode)}>
-              <option value="paperweight">pipeline: paperweight</option>
-              <option value="no-defense">pipeline: no defense (demo)</option>
-              <option value="hijacked-planner">pipeline: hijacked planner (demo)</option>
-            </select>
           </>
         )}
         {state.public && <span className="muted small">Read-only demo replaying recorded Nemotron calls. The live station runs locally.</span>}

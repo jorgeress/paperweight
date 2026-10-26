@@ -11,7 +11,9 @@ those citations before anything reaches the actuator.
 <!-- todo: demo gif of the real station -->
 
 **Try it:** <!-- todo: hosted read-only demo url --> (replays recorded Nemotron calls,
-no key needed). The live station runs locally, see [Run locally](#run-locally).
+no key needed). Pick a recorded frame and switch the pipeline to `no defense` or
+`hijacked planner` to see the same frame without Paperweight. The live station runs
+locally, see [Run locally](#run-locally).
 
 Built for the Nebius x NVIDIA Global AI Hackathon (October 2026), Physical AI track.
 

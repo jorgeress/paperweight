@@ -103,6 +103,7 @@ button:disabled { opacity: 0.4; cursor: default; }
 .ledger li { display: grid; grid-template-columns: 70px 64px 110px minmax(0, 1fr); gap: 8px; align-items: center; padding: 4px 6px; cursor: pointer; }
 .ledger li:hover { background: var(--bg); }
 .ledger li.selected { background: var(--bg); outline: 1px solid var(--line); }
+.ledger .demo-pipeline { color: var(--deny); }
 
 @media (max-width: 900px) {
   .layout { grid-template-columns: 1fr; }

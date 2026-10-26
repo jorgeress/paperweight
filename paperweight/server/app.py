@@ -13,7 +13,7 @@ from pydantic import BaseModel
 from starlette.concurrency import run_in_threadpool
 
 from paperweight.camera.capture import redact_source
-from paperweight.pipeline.modes import PipelineMode
+from paperweight.pipeline.decision import PipelineMode
 from paperweight.policy.task import Grant, OperatorTask
 from paperweight.server.station_state import FRAMES_DIR, StationState
 from paperweight.station.link import SimulatedLink
@@ -123,14 +123,15 @@ def list_samples() -> list[dict]:
 
 
 @app.post("/api/samples/{sample_id}/decide")
-async def decide_sample(request: Request, sample_id: str) -> dict:
+async def decide_sample(request: Request, sample_id: str, mode: PipelineMode | None = None) -> dict:
     # threat: path traversal through the sample id
     if not re.fullmatch(r"[a-z]+-\d{3}", sample_id):
         raise HTTPException(status_code=404)
     path = SAMPLES_DIR / f"{sample_id}.jpg"
     if not path.exists():
         raise HTTPException(status_code=404)
-    decided = await run_in_threadpool(station(request).decide, path.read_bytes())
+    # note: the mode travels with the request so visitors of the public demo do not switch it for each other
+    decided = await run_in_threadpool(station(request).decide, path.read_bytes(), mode)
     if not decided.ok:
         raise HTTPException(status_code=409, detail=decided.error)
     return decided.value.model_dump(mode="json")

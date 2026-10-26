@@ -12,7 +12,7 @@ export type StationState = {
   decisions: Decision[];
 };
 
-export type PipelineMode = "paperweight" | "no-defense" | "hijacked-planner";
+export type PipelineMode = Decision["pipeline"];
 
 type Failure = { message: string; at: number };
 
@@ -60,9 +60,9 @@ export const useStation = () => {
   );
 
   const decideSample = useCallback(
-    async (sampleId: string) => {
+    async (sampleId: string, mode: PipelineMode) => {
       setIsDeciding(true);
-      await post(`/api/samples/${sampleId}/decide`, {});
+      await post(`/api/samples/${sampleId}/decide?mode=${mode}`, {});
       setIsDeciding(false);
     },
     [post],
