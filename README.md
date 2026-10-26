@@ -132,6 +132,9 @@ uv run uvicorn paperweight.server.app:app --port 8765   # open http://localhost:
 Firmware: `firmware/station/station.ino` for an Arduino Uno. Wiring and the serial
 protocol are below. `uv run pytest` runs the policy tests.
 
+`PAPERWEIGHT_MAX_LIVE_CALLS` (default 200) caps paid model calls per process. Past it every
+parcel fails closed to `HOLD` until the server restarts.
+
 ### Station protocol
 
 Line-based ASCII over USB serial at 115200 baud.

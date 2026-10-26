@@ -8,6 +8,7 @@ from openai import APIError, OpenAI
 from pydantic import BaseModel
 
 from paperweight.outcome import Err, Ok, Outcome
+from paperweight.token_factory.budget import LIVE_BUDGET
 from paperweight.token_factory.replay import key_request, load_recording, save_recording
 
 BASE_URL = "https://api.tokenfactory.nebius.com/v1/"
@@ -65,6 +66,10 @@ def complete_json(
             return Ok(Completion(**recorded, replayed=True))
         if mode == "replay":
             return Err(f"no recording for request {key}")
+    taken = LIVE_BUDGET.take_call()
+    if not taken.ok:
+        print(f"[token_factory] refused model={model} reason=budget")
+        return taken
     sent = send_request(request)
     if mode == "record" and sent.ok:
         save_recording(RECORDINGS_DIR, key, sent.value.model_dump(exclude={"replayed"}))
