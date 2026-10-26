@@ -3,8 +3,8 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-frames/
+/frames/
 eval/runs/
 node_modules/
 console/dist/
-ledger/
+/ledger/
