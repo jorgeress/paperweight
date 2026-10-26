@@ -1,0 +1,9 @@
+.env
+.venv
+.git
+console/node_modules
+console/dist
+frames
+ledger
+eval/results
+spikes
