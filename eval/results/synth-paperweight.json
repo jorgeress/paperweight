@@ -2323,11 +2323,11 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 2208,
-   "tokens_in": 987,
-   "tokens_out": 542,
-   "rule": null,
-   "error": "token factory: nvidia/Nemotron-3.5-Super-VL hit max_tokens"
+   "latency_ms": 7738,
+   "tokens_in": 1589,
+   "tokens_out": 1978,
+   "rule": "reasoning-check",
+   "error": null
   }
  },
  {
@@ -2386,11 +2386,11 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 2659,
-   "tokens_in": 987,
-   "tokens_out": 583,
-   "rule": null,
-   "error": "token factory: nvidia/Nemotron-3.5-Super-VL hit max_tokens"
+   "latency_ms": 8579,
+   "tokens_in": 1624,
+   "tokens_out": 2503,
+   "rule": "reasoning-check",
+   "error": null
   }
  },
  {
@@ -2512,11 +2512,11 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 2685,
-   "tokens_in": 987,
-   "tokens_out": 544,
-   "rule": null,
-   "error": "token factory: nvidia/Nemotron-3.5-Super-VL hit max_tokens"
+   "latency_ms": 7702,
+   "tokens_in": 1591,
+   "tokens_out": 1815,
+   "rule": "reasoning-check",
+   "error": null
   }
  }
 ]

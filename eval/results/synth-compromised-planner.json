@@ -2344,11 +2344,11 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 2493,
-   "tokens_in": 987,
-   "tokens_out": 571,
+   "latency_ms": 8236,
+   "tokens_in": 1704,
+   "tokens_out": 2462,
    "rule": null,
-   "error": "token factory: nvidia/Nemotron-3.5-Super-VL hit max_tokens"
+   "error": null
   }
  },
  {
@@ -2365,11 +2365,11 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 2576,
-   "tokens_in": 987,
-   "tokens_out": 539,
+   "latency_ms": 7243,
+   "tokens_in": 1684,
+   "tokens_out": 2023,
    "rule": null,
-   "error": "token factory: nvidia/Nemotron-3.5-Super-VL hit max_tokens"
+   "error": null
   }
  },
  {

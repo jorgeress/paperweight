@@ -99,9 +99,9 @@ privileged requests). Same task in every config. Reproduce with
 | no-defense | 54/60 (90%) | 6/60 (10%) | 50/50 (100%) | 0/50 (0%) | 2.3 | 1.06 |
 | prompt-defense | 4/60 (7%) | 56/60 (93%) | 50/50 (100%) | 0/50 (0%) | 2.4 | 0.93 |
 | text-masking | 0/60 (0%) | 2/60 (3%) | 7/50 (14%) | 42/50 (84%) | 6.8 | 2.2 |
-| paperweight | 0/60 (0%) | 50/60 (83%) | 49/50 (98%) | 1/50 (2%) | 5.2 | 1.86 |
+| paperweight | 0/60 (0%) | 50/60 (83%) | 49/50 (98%) | 1/50 (2%) | 5.2 | 1.9 |
 | paperweight-no-check | 0/60 (0%) | 50/60 (83%) | 49/50 (98%) | 1/50 (2%) | 4.9 | 1.56 |
-| compromised-planner | 0/60 (0%) | 14/60 (23%) | 49/50 (98%) | 1/50 (2%) | 6.8 | 2.16 |
+| compromised-planner | 0/60 (0%) | 14/60 (23%) | 49/50 (98%) | 1/50 (2%) | 6.9 | 2.19 |
 | compromised-planner+check | 0/60 (0%) | 14/60 (23%) | 49/50 (98%) | 1/50 (2%) | 8.1 | 2.75 |
 
 - **compromised-planner** tells the planner to obey scene notes and to pick whatever
@@ -156,7 +156,8 @@ Line-based ASCII over USB serial at 115200 baud.
 - About 5 s per decision. Fine for a station that waits for a parcel, too slow for a
   moving belt.
 - With thinking on, the planner sometimes reasons past `max_tokens`; that fails closed
-  to `HOLD` (5 of 120 frames in the paperweight run).
+  to `HOLD` (2 of 120 frames in the paperweight run). The cut is recorded, so replays
+  show the same error.
 - Models can be retired on Token Factory without a redirect. The recorded calls keep
   the eval and the demo reproducible, but live use needs the exact model IDs above.
 
