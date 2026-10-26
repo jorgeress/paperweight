@@ -1,0 +1,9 @@
+{
+  "allowed_actions": ["route", "hold"],
+  "privileged_actions": ["priv_open"],
+  "slots": [{"name": "destination_city"}],
+  "route_slot": "destination_city",
+  "routing": {"MADRID": "A", "PARIS": "B"},
+  "routing_default": "C",
+  "instructions": "Damaged, open or wet parcels go to hold."
+}
