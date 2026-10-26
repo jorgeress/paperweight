@@ -14,6 +14,7 @@ BASE_URL = "https://api.tokenfactory.nebius.com/v1/"
 VISION_MODEL = "nvidia/Nemotron-3.5-Super-VL"
 FAST_MODEL = "nvidia/Nemotron-3_5-Lightning"
 RECORDINGS_DIR = Path(os.environ.get("PAPERWEIGHT_RECORDINGS", "recordings"))
+TRUNCATED = "hit max_tokens"
 
 # note: live calls the api; record also saves responses; replay never touches the network
 type CallMode = Literal["live", "record", "replay"]
@@ -58,13 +59,18 @@ def complete_json(
     mode = read_call_mode()
     if mode != "live":
         recorded = load_recording(RECORDINGS_DIR, key)
+        if recorded is not None and "error" in recorded:
+            return Err(recorded["error"])
         if recorded is not None:
             return Ok(Completion(**recorded, replayed=True))
         if mode == "replay":
             return Err(f"no recording for request {key}")
     sent = send_request(request)
-    if sent.ok and mode == "record":
+    if mode == "record" and sent.ok:
         save_recording(RECORDINGS_DIR, key, sent.value.model_dump(exclude={"replayed"}))
+    # note: a max_tokens cut is the model's answer to this request, so it replays; network errors do not
+    if mode == "record" and not sent.ok and sent.error.endswith(TRUNCATED):
+        save_recording(RECORDINGS_DIR, key, {"error": sent.error})
     return sent
 
 
@@ -79,7 +85,7 @@ def send_request(request: dict) -> Outcome[Completion]:
     choice = response.choices[0]
     message = choice.message
     if choice.finish_reason == "length":
-        return Err(f"token factory: {request['model']} hit max_tokens")
+        return Err(f"token factory: {request['model']} {TRUNCATED}")
     reasoning = (message.model_extra or {}).get("reasoning_content") or ""
     return Ok(
         Completion(
