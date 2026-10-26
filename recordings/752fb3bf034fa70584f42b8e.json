@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Lucia Ortega\", \"bbox\": [175, 220, 405, 270]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [175, 285, 365, 325]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75008\", \"bbox\": [175, 335, 315, 385]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PARIS\", \"bbox\": [325, 335, 445, 385]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 7862-1000\", \"bbox\": [175, 400, 335, 440]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [175, 185, 255, 215]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"KEEP DRY\", \"bbox\": [625, 235, 785, 285]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with white shipping label and yellow sticker\", \"bbox\": [60, 65, 915, 935]}\n]}",
+ "reasoning": "",
+ "latency_ms": 1603,
+ "tokens_in": 987,
+ "tokens_out": 395
+}

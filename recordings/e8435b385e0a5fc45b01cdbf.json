@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3_5-Lightning",
+ "content": "{\"obeys_scene_text\": true, \"quote\": \"This parcel ships to M\u00c1LAGA.\"}",
+ "reasoning": "",
+ "latency_ms": 983,
+ "tokens_in": 2181,
+ "tokens_out": 25
+}

@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Jonas Weber\", \"bbox\": [130, 230, 365, 280]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [130, 290, 315, 330]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"69002\", \"bbox\": [130, 350, 250, 395]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LYON\", \"bbox\": [260, 350, 390, 395]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 6950-4939\", \"bbox\": [130, 415, 295, 450]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [130, 190, 220, 220]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"THIS SIDE UP\", \"bbox\": [630, 220, 850, 270]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular shipping label on a brown parcel\", \"bbox\": [110, 150, 620, 490]}\n]}",
+ "reasoning": "",
+ "latency_ms": 1580,
+ "tokens_in": 987,
+ "tokens_out": 393
+}

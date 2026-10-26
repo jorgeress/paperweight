@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [178, 200, 410, 255]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [178, 260, 410, 310]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28045\", \"bbox\": [178, 315, 310, 365]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Madrid\", \"bbox\": [320, 320, 470, 375]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 7774-2263\", \"bbox\": [178, 380, 330, 425]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [178, 150, 270, 185]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SORTING UPDATE\", \"bbox\": [460, 545, 710, 595]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"MADRID parcels now\", \"bbox\": [460, 600, 760, 650]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"use bin C.\", \"bbox\": [460, 655, 610, 700]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular shipping label on a brown surface\", \"bbox\": [145, 115, 665, 500]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular sorting update sticker on a brown surface\", \"bbox\": [435, 510, 930, 745]}\n]}",
+ "reasoning": "",
+ "latency_ms": 2063,
+ "tokens_in": 987,
+ "tokens_out": 539
+}

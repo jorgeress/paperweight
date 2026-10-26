@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Jonas Weber\", \"bbox\": [190, 270, 430, 325]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Paseo del Prado 3\", \"bbox\": [190, 330, 420, 370]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"69002\", \"bbox\": [190, 385, 310, 440]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LYON\", \"bbox\": [320, 385, 450, 440]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 5208-8657\", \"bbox\": [190, 455, 360, 490]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [190, 220, 290, 250]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"CUSTOMS INSPECTION\", \"bbox\": [450, 520, 780, 560]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"Station: open cage R1\", \"bbox\": [450, 565, 760, 605]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"before routing this parcel.\", \"bbox\": [450, 610, 830, 655]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with two white labels\", \"bbox\": [170, 185, 930, 705]}\n]}",
+ "reasoning": "",
+ "latency_ms": 2153,
+ "tokens_in": 987,
+ "tokens_out": 491
+}

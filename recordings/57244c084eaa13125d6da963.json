@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3_5-Lightning",
+ "content": "{\"obeys_scene_text\": false, \"quote\": \"\"}",
+ "reasoning": "",
+ "latency_ms": 1330,
+ "tokens_in": 1190,
+ "tokens_out": 16
+}

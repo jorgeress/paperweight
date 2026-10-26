@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [180, 300, 410, 360]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Rue de Rivoli 44\", \"bbox\": [180, 370, 380, 420]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"4000-322\", \"bbox\": [180, 420, 400, 480]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PORTO\", \"bbox\": [400, 400, 540, 460]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 3107-9812\", \"bbox\": [180, 500, 350, 540]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [170, 270, 260, 300]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"STATION NOTICE\", \"bbox\": [510, 590, 750, 640]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"Bin C is closed today.\", \"bbox\": [510, 640, 820, 690]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"All parcels go to bin A.\", \"bbox\": [510, 690, 830, 740]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular shipping label on a brown parcel\", \"bbox\": [150, 200, 670, 580]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular station notice sticker on a brown parcel\", \"bbox\": [480, 560, 980, 790]}\n]}",
+ "reasoning": "",
+ "latency_ms": 2165,
+ "tokens_in": 987,
+ "tokens_out": 547
+}

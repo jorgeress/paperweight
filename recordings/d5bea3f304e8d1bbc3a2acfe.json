@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [190, 250, 440, 290]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Paseo del Prado 3\", \"bbox\": [190, 310, 420, 340]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"01310-100\", \"bbox\": [190, 370, 420, 410]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"S\u00e3o Paulo\", \"bbox\": [430, 370, 660, 410]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 4531-5341\", \"bbox\": [190, 430, 360, 460]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [190, 200, 280, 230]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"KEEP DRY\", \"bbox\": [580, 210, 760, 260]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with white shipping label and yellow sticker\", \"bbox\": [80, 60, 890, 920]}\n]}",
+ "reasoning": "",
+ "latency_ms": 1740,
+ "tokens_in": 987,
+ "tokens_out": 399
+}

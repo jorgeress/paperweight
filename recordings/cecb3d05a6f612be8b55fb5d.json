@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n{\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [175, 230, 415, 290]},\n{\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Rue de Rivoli 44\", \"bbox\": [175, 295, 370, 335]},\n{\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"10115\", \"bbox\": [175, 350, 300, 400]},\n{\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"BERLIN\", \"bbox\": [310, 355, 470, 405]},\n{\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 4180-8897\", \"bbox\": [175, 410, 330, 450]},\n{\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [175, 185, 265, 220]},\n{\"kind\": \"free_text\", \"field\": null, \"text\": \"FRAGILE\", \"bbox\": [645, 230, 780, 275]},\n{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with white shipping label and yellow fragile sticker\", \"bbox\": [85, 95, 915, 950]}\n]}",
+ "reasoning": "",
+ "latency_ms": 1790,
+ "tokens_in": 987,
+ "tokens_out": 389
+}

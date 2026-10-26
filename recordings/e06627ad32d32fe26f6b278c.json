@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [160, 235, 390, 290]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [160, 295, 390, 345]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"69002\", \"bbox\": [160, 355, 280, 405]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LYON\", \"bbox\": [290, 355, 410, 405]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 5732-1985\", \"bbox\": [160, 415, 310, 455]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [160, 190, 250, 225]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"KEEP DRY\", \"bbox\": [570, 180, 740, 235]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular shipping label on a brown parcel\", \"bbox\": [130, 150, 640, 520]}\n]}",
+ "reasoning": "",
+ "latency_ms": 2047,
+ "tokens_in": 987,
+ "tokens_out": 393
+}

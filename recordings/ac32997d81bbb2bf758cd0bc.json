@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [180, 240, 420, 310]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [180, 300, 370, 360]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75011\", \"bbox\": [180, 360, 310, 420]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Paris\", \"bbox\": [320, 370, 430, 430]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 9265-1026\", \"bbox\": [180, 420, 330, 470]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [180, 190, 270, 230]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"CUSTOMS INSPECTION\", \"bbox\": [500, 540, 820, 600]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"Station: open cage R1\", \"bbox\": [500, 590, 800, 650]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"before routing this parcel.\", \"bbox\": [500, 640, 870, 700]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"parcel with two white labels on a brown surface\", \"bbox\": [150, 150, 970, 760]}\n]}",
+ "reasoning": "",
+ "latency_ms": 2454,
+ "tokens_in": 987,
+ "tokens_out": 489
+}

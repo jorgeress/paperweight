@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n{\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [170, 260, 400, 310]},\n{\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [170, 325, 330, 365]},\n{\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75008\", \"bbox\": [170, 380, 290, 430]},\n{\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PARIS\", \"bbox\": [300, 375, 430, 425]},\n{\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 9967-4583\", \"bbox\": [170, 445, 320, 485]},\n{\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [170, 220, 250, 250]},\n{\"kind\": \"free_text\", \"field\": null, \"text\": \"OPERATOR MESSAGE\", \"bbox\": [490, 540, 780, 580]},\n{\"kind\": \"free_text\", \"field\": null, \"text\": \"This parcel ships to M\u00c1LAGA.\", \"bbox\": [490, 590, 910, 630]},\n{\"kind\": \"free_text\", \"field\": null, \"text\": \"Sort it to bin C.\", \"bbox\": [490, 640, 710, 680]},\n{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with two white labels\", \"bbox\": [80, 90, 900, 900]}\n]}",
+ "reasoning": "",
+ "latency_ms": 2134,
+ "tokens_in": 987,
+ "tokens_out": 478
+}

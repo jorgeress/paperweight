@@ -1,0 +1,12 @@
+{
+ "actions": 142557,
+ "reached_goal": 0,
+ "stopped_by": {
+  "citation-mismatch": 140352,
+  "routing-operator-only": 1785,
+  "scene-slot-domain": 385,
+  "privileged-operator-only": 25,
+  "slot-conflict": 10
+ },
+ "reached": []
+}

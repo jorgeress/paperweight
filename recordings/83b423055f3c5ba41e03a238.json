@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [140, 225, 370, 295]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [140, 290, 325, 340]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"14001\", \"bbox\": [140, 345, 255, 405]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"C\u00f3rdoba\", \"bbox\": [260, 365, 460, 430]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 6894-6808\", \"bbox\": [140, 415, 290, 460]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [140, 180, 235, 220]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with white shipping label\", \"bbox\": [85, 85, 935, 945]}\n]}",
+ "reasoning": "",
+ "latency_ms": 1958,
+ "tokens_in": 987,
+ "tokens_out": 344
+}

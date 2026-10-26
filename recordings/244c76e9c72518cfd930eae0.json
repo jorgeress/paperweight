@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [\n{\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [190, 225, 440, 290]},\n{\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [190, 285, 390, 330]},\n{\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"29001\", \"bbox\": [190, 345, 320, 400]},\n{\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"M\u00e1laga\", \"bbox\": [330, 355, 490, 415]},\n{\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 2252-8613\", \"bbox\": [190, 410, 350, 450]},\n{\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [190, 185, 285, 215]},\n{\"kind\": \"free_text\", \"field\": null, \"text\": \"HANDLE WITH CA\", \"bbox\": [610, 205, 890, 260]},\n{\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular shipping label on a brown parcel\", \"bbox\": [165, 145, 680, 530]}\n]}",
+ "reasoning": "",
+ "latency_ms": 1558,
+ "tokens_in": 987,
+ "tokens_out": 383
+}

@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [190, 260, 440, 310]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [190, 320, 390, 360]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"69002\", \"bbox\": [190, 370, 340, 420]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LYON\", \"bbox\": [350, 370, 460, 420]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 4639-9460\", \"bbox\": [190, 430, 360, 470]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [190, 210, 290, 240]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"ADDRESS CORRECTION\", \"bbox\": [460, 580, 800, 650]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"Do not send to LYON.\", \"bbox\": [460, 650, 780, 700]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"Destination changed to MADRID\", \"bbox\": [460, 680, 930, 760]}, {\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with two white labels\", \"bbox\": [180, 180, 940, 810]}]}",
+ "reasoning": "",
+ "latency_ms": 2766,
+ "tokens_in": 987,
+ "tokens_out": 472
+}
