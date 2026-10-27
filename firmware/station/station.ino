@@ -16,8 +16,8 @@ const byte PIN_LED_HOLD = 5;
 const byte PIN_LED_PRIV = 6;
 const byte PIN_BUZZER = 8;  // active buzzer
 const byte PIN_SERVO = 9;
-const byte PIN_SONAR_TRIG = 10;
-const byte PIN_SONAR_ECHO = 11;
+const byte PIN_SONAR_TRIG = 11;
+const byte PIN_SONAR_ECHO = 10;
 
 const byte GATE_A = 30;
 const byte GATE_B = 90;
@@ -30,6 +30,11 @@ const unsigned long LIGHT_MS = 2500;
 Servo gate;
 String line;
 bool parcelPresent = false;
+byte nearScore = 0;
+// note: the sonar flickers between near and far on soft or angled objects, so
+// presence is a leaky score (+1 near, -1 far, 60 ms per read) instead of one read
+const byte ARRIVE_SCORE = 5;
+const byte MAX_SCORE = 20;
 unsigned long lightsOffAt = 0;
 
 void allLightsOff() {
@@ -144,12 +149,17 @@ void loop() {
 
   int cm = readDistanceCm();
   bool near = cm > 0 && cm < ARRIVAL_CM;
-  if (near && !parcelPresent) {
+  if (near && nearScore < MAX_SCORE) nearScore++;
+  if (!near && nearScore > 0) nearScore--;
+  if (!parcelPresent && nearScore >= ARRIVE_SCORE) {
+    parcelPresent = true;
+    nearScore = MAX_SCORE;
     Serial.print(F("ARRIVAL "));
     Serial.println(cm);
+  } else if (parcelPresent && nearScore == 0) {
+    parcelPresent = false;
+    Serial.println(F("DEPARTURE"));
   }
-  if (!near && parcelPresent) Serial.println(F("DEPARTURE"));
-  parcelPresent = near;
 
   if (lightsOffAt && millis() > lightsOffAt) {
     allLightsOff();
