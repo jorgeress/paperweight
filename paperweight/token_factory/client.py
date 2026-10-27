@@ -46,6 +46,8 @@ def complete_json(
     *,
     thinking: bool,
     max_tokens: int = 4096,
+    timeout_s: float = 60,
+    retries: int = 2,
 ) -> Outcome[Completion]:
     request = {
         "model": model,
@@ -70,7 +72,7 @@ def complete_json(
     if not taken.ok:
         print(f"[token_factory] refused model={model} reason=budget")
         return taken
-    sent = send_request(request)
+    sent = send_request(request, timeout_s, retries)
     if mode == "record" and sent.ok:
         save_recording(RECORDINGS_DIR, key, sent.value.model_dump(exclude={"replayed"}))
     # note: a max_tokens cut is the model's answer to this request, so it replays; network errors do not
@@ -79,8 +81,8 @@ def complete_json(
     return sent
 
 
-def send_request(request: dict) -> Outcome[Completion]:
-    client = OpenAI(base_url=BASE_URL, api_key=os.environ["NEBIUS_API_KEY"], max_retries=2, timeout=60)
+def send_request(request: dict, timeout_s: float, retries: int) -> Outcome[Completion]:
+    client = OpenAI(base_url=BASE_URL, api_key=os.environ["NEBIUS_API_KEY"], max_retries=retries, timeout=timeout_s)
     started = time.monotonic()
     try:
         response = client.chat.completions.create(**request)
