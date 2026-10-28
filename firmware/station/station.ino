@@ -12,18 +12,19 @@ LiquidCrystal lcd(A0, A1, A2, A3, A4, A5);
 const byte PIN_LED_A = 2;
 const byte PIN_LED_B = 3;
 const byte PIN_LED_C = 4;
-const byte PIN_LED_HOLD = 5;
-const byte PIN_LED_PRIV = 6;
+const byte PIN_LED_HOLD = 5;  // yellow
+const byte PIN_LED_DENY = 6;  // red; priv open lights it with the yellow hold led
 const byte PIN_BUZZER = 8;  // active buzzer
 const byte PIN_SERVO = 9;
 const byte PIN_SONAR_TRIG = 11;
 const byte PIN_SONAR_ECHO = 10;
 
-const byte GATE_A = 65;
-const byte GATE_B = 115;
-const byte GATE_C = 165;
+// note: angles fit the servo as mounted on the table, C at one end and hold behind it at the other
+const byte GATE_A = 90;
+const byte GATE_B = 150;
+const byte GATE_C = 180;
 // note: rest is the hold position, so a gate that gets no valid decision stays parked
-const byte GATE_REST = 15;
+const byte GATE_REST = 0;
 
 const int ARRIVAL_CM = 12;        // parcel closer than this counts as arrived
 const unsigned long LIGHT_MS = 2500;
@@ -39,7 +40,7 @@ const byte MAX_SCORE = 20;
 unsigned long lightsOffAt = 0;
 
 void allLightsOff() {
-  for (byte pin = PIN_LED_A; pin <= PIN_LED_PRIV; pin++) digitalWrite(pin, LOW);
+  for (byte pin = PIN_LED_A; pin <= PIN_LED_DENY; pin++) digitalWrite(pin, LOW);
 }
 
 void showMessage(const String &text) {
@@ -104,12 +105,13 @@ void handle(const String &cmd) {
     Serial.println(F("OK HOLD"));
   } else if (cmd == "DENY") {
     gate.write(GATE_REST);
-    light(PIN_LED_HOLD);
+    light(PIN_LED_DENY);
     beep(3, 200);
     showMessage("DENY");
     Serial.println(F("OK DENY"));
   } else if (cmd == "PRIV OPEN") {
-    light(PIN_LED_PRIV);
+    light(PIN_LED_HOLD);
+    digitalWrite(PIN_LED_DENY, HIGH);
     beep(1, 400);
     showMessage("PRIV OPEN");
     Serial.println(F("OK PRIV OPEN"));
@@ -122,7 +124,7 @@ void handle(const String &cmd) {
 }
 
 void setup() {
-  for (byte pin = PIN_LED_A; pin <= PIN_LED_PRIV; pin++) pinMode(pin, OUTPUT);
+  for (byte pin = PIN_LED_A; pin <= PIN_LED_DENY; pin++) pinMode(pin, OUTPUT);
   pinMode(PIN_BUZZER, OUTPUT);
   pinMode(PIN_SONAR_TRIG, OUTPUT);
   pinMode(PIN_SONAR_ECHO, INPUT);
