@@ -24,6 +24,7 @@ class StationState:
         self.second_layer = os.environ.get("PAPERWEIGHT_SECOND_LAYER", "1") == "1"
         self.mode: PipelineMode = "paperweight"
         self.deciding = threading.Lock()
+        self.arrival_waiting = False
         self.subscribers: set[asyncio.Queue] = set()
         self.link: StationLink = self.open_link()
 
@@ -37,12 +38,17 @@ class StationState:
 
     def on_arrival(self, distance_cm: int) -> None:
         print(f"[station] arrival distance_cm={distance_cm}")
-        threading.Thread(target=self.decide_from_camera, daemon=True).start()
+        threading.Thread(target=self.decide_arrival, daemon=True).start()
+
+    def decide_arrival(self) -> None:
+        # note: the sonar reports an arrival only once, so one that lands mid-decision waits its turn
+        if self.deciding.locked():
+            self.arrival_waiting = True
+            print("[station] queue arrival reason=deciding")
+            return
+        self.decide_from_camera()
 
     def decide_from_camera(self) -> Outcome[Decision]:
-        if self.deciding.locked():
-            print("[station] arrival ignored, a decision is already running")
-            return Err("a decision is already running")
         frame = capture_frame(self.camera_source)
         if not frame.ok:
             print(f"[camera] error={frame.error!r}")
@@ -52,6 +58,7 @@ class StationState:
     def decide(self, frame_jpeg: bytes, mode: PipelineMode | None = None) -> Outcome[Decision]:
         # note: one parcel at a time, the tray holds a single parcel
         if not self.deciding.acquire(blocking=False):
+            print("[station] refuse decision reason=deciding")
             return Err("a decision is already running")
         try:
             decision = decide_in_mode(frame_jpeg, self.task, mode or self.mode, second_layer=self.second_layer)
@@ -66,6 +73,10 @@ class StationState:
             return Ok(decision)
         finally:
             self.deciding.release()
+            if self.arrival_waiting:
+                # note: if the parcel left meanwhile, no label is readable and the planner is told to hold
+                self.arrival_waiting = False
+                threading.Thread(target=self.decide_arrival, daemon=True).start()
 
     def consume(self, used: list[Grant]) -> None:
         if used:
