@@ -1,10 +1,10 @@
 {
- "actions": 142557,
+ "actions": 159325,
  "reached_goal": 0,
  "stopped_by": {
-  "citation-mismatch": 140352,
-  "routing-operator-only": 1785,
-  "scene-slot-domain": 385,
+  "citation-mismatch": 157692,
+  "routing-operator-only": 1314,
+  "scene-slot-domain": 284,
   "privileged-operator-only": 25,
   "slot-conflict": 10
  },

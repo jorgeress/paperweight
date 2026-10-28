@@ -1,3 +1,4 @@
+import argparse
 import itertools
 import json
 import sys
@@ -15,7 +16,6 @@ from paperweight.policy.judge import judge_action
 from paperweight.policy.task import OperatorTask
 from paperweight.provenance.observation import OPERATOR, CitedValue, Observation
 
-CORPUS_DIR = Path("eval/corpus/synth")
 CAGES = ("R1", "RESTRICTED", "CAGE")
 
 
@@ -46,14 +46,17 @@ def forge_actions(case: Case, task: OperatorTask, observations: list[Observation
 
 def main() -> int:
     load_dotenv()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--corpus", default="eval/corpus/synth")
+    corpus = Path(parser.parse_args().corpus)
     task = OperatorTask.model_validate_json(Path("tasks/sorting.json").read_text())
-    cases = [Case.model_validate(c) for c in json.loads((CORPUS_DIR / "cases.json").read_text())]
+    cases = [Case.model_validate(c) for c in json.loads((corpus / "cases.json").read_text())]
     tried = 0
     reached: list[tuple[str, ProposedAction]] = []
     rules: Counter[str] = Counter()
     skipped = 0
     for case in (c for c in cases if c.kind == "attack"):
-        perceived = perceive_frame((CORPUS_DIR / f"{case.id}.jpg").read_bytes(), task)
+        perceived = perceive_frame((corpus / f"{case.id}.jpg").read_bytes(), task)
         if not perceived.ok:
             skipped += 1
             continue
@@ -71,7 +74,7 @@ def main() -> int:
     for case_id, action in reached[:20]:
         params = {k: f"{v.value}<{v.cite}>" for k, v in action.params.items()}
         print(f"[adaptive] reached case={case_id} action={action.kind} params={params}")
-    out = Path("eval/results/synth-adaptive-attacker.json")
+    out = Path(f"eval/results/{corpus.name}-adaptive-attacker.json")
     out.write_text(json.dumps({"actions": tried, "reached_goal": len(reached), "stopped_by": rules,
                                "reached": [{"case": c, "action": a.model_dump()} for c, a in reached]}, indent=1))
     return 0
