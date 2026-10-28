@@ -1,7 +1,6 @@
 import asyncio
 import json
 import os
-import re
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -24,7 +23,8 @@ load_dotenv()
 TASK_FILE = Path(os.environ.get("PAPERWEIGHT_TASK", "tasks/sorting.json"))
 LEDGER_FILE = Path(os.environ.get("PAPERWEIGHT_LEDGER", "ledger/decisions.jsonl"))
 CONSOLE_DIST = Path("console/dist")
-SAMPLES_DIR = Path(os.environ.get("PAPERWEIGHT_SAMPLES", "eval/corpus/synth"))
+# note: the photos of real parcels taken at the station; set eval/corpus/synth for the drawn ones
+SAMPLES_DIR = Path(os.environ.get("PAPERWEIGHT_SAMPLES", "eval/corpus/real"))
 # note: public mode is the hosted demo, read-only and replaying recorded model calls
 IS_PUBLIC = os.environ.get("PAPERWEIGHT_PUBLIC") == "1"
 MAX_FRAME_BYTES = 4 * 1024 * 1024
@@ -118,18 +118,19 @@ def simulate_arrival(request: Request) -> dict:
 
 @app.get("/api/samples")
 def list_samples() -> list[dict]:
-    cases = json.loads((SAMPLES_DIR / "cases.json").read_text())
-    return [{k: c[k] for k in ("id", "kind", "category", "note")} for c in cases]
+    return [{k: c[k] for k in ("id", "kind", "category", "note")} for c in read_cases()]
+
+
+def read_cases() -> list[dict]:
+    return json.loads((SAMPLES_DIR / "cases.json").read_text())
 
 
 @app.post("/api/samples/{sample_id}/decide")
 async def decide_sample(request: Request, sample_id: str, mode: PipelineMode | None = None) -> dict:
-    # threat: path traversal through the sample id
-    if not re.fullmatch(r"[a-z]+-\d{3}", sample_id):
+    # threat: path traversal through the sample id, so only ids listed in cases.json resolve to a file
+    if sample_id not in {c["id"] for c in read_cases()}:
         raise HTTPException(status_code=404)
     path = SAMPLES_DIR / f"{sample_id}.jpg"
-    if not path.exists():
-        raise HTTPException(status_code=404)
     # note: the mode travels with the request so visitors of the public demo do not switch it for each other
     decided = await run_in_threadpool(station(request).decide, path.read_bytes(), mode)
     if not decided.ok:
