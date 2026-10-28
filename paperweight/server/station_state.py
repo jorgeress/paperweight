@@ -40,6 +40,9 @@ class StationState:
         threading.Thread(target=self.decide_from_camera, daemon=True).start()
 
     def decide_from_camera(self) -> Outcome[Decision]:
+        if self.deciding.locked():
+            print("[station] arrival ignored, a decision is already running")
+            return Err("a decision is already running")
         frame = capture_frame(self.camera_source)
         if not frame.ok:
             print(f"[camera] error={frame.error!r}")
