@@ -10,10 +10,15 @@ those citations before anything reaches the actuator.
 
 <!-- todo: demo gif of the real station -->
 
-**Try it:** <!-- todo: hosted read-only demo url --> (replays recorded Nemotron calls,
-no key needed). Pick a recorded frame and switch the pipeline to `no defense` or
-`hijacked planner` to see the same frame without Paperweight. The live station runs
-locally, see [Run locally](#run-locally).
+**Try it, no key needed:** the console can replay recorded Nemotron calls on the eval
+photos. After the install step in [Run locally](#run-locally):
+
+```sh
+PAPERWEIGHT_MODE=replay PAPERWEIGHT_PUBLIC=1 STATION_PORT= uv run uvicorn paperweight.server.app:app --port 8765
+```
+
+Pick a sample frame and switch the pipeline to `no defense` or `hijacked planner` to
+see the same frame without Paperweight.
 
 Built for the Nebius x NVIDIA Global AI Hackathon (October 2026), Physical AI track.
 
@@ -47,8 +52,8 @@ operator task ──────────────────────
 observations + task ─> planner (Super-VL, thinking on) ─> actions, every param cited
 actions ─> policy (deterministic, 7 rules) ─> verdict per action
 planner reasoning ─> reasoning check (Lightning) ─> may raise allow to hold, never lowers
-verdicts ─> station link (single exit, serial) ─> Arduino: gate servo, LEDs, buzzer, LCD
-everything ─> ledger (jsonl) ─> console (SSE)
+verdicts ─> station link (single exit, serial) ─> Arduino: gate servo, bin LEDs
+everything ─> ledger (jsonl) ─> console (SSE, beeps on every verdict)
 ```
 
 The model never assigns observation ids, so a citation can only point at something
@@ -76,8 +81,31 @@ is not trusted for anything else. Any stage error or timeout fails closed to `HO
 | Planner | `nvidia/Nemotron-3.5-Super-VL` | Text only here. Thinking on, because the reasoning is audited |
 | Reasoning check | `nvidia/Nemotron-3_5-Lightning` | ~0.3 s to audit the planner's `reasoning_content` |
 
-All calls use `response_format` with a JSON schema, temperature 0, and are recorded so
-the eval and the hosted demo can replay them after the models change.
+## How Token Factory is used
+
+All calls go through one function, `complete_json` in
+[`paperweight/token_factory/client.py`](paperweight/token_factory/client.py), using the
+OpenAI SDK against `https://api.tokenfactory.nebius.com/v1/`.
+
+- **Structured output on every stage.** `response_format` is
+  `{"type": "json_schema", "json_schema": {"name", "schema", "strict": true}}`, with
+  temperature 0. Perception returns typed observations, the planner returns actions
+  with a citation per parameter, and the reasoning check returns a flag and a reason.
+  Nothing is parsed out of free text.
+- **Thinking per stage.** `extra_body={"chat_template_kwargs": {"enable_thinking": ...}}`
+  is off for perception (a label read went from 1.8 s / 213 output tokens to 1.1 s / 13)
+  and for the check, and on for the planner, with `max_tokens` 12000.
+- **The reasoning is an input, not a log.** With thinking on, Super-VL returns
+  `reasoning_content` next to the JSON. Lightning reads it and flags plans whose
+  reasoning follows scene instructions. It can raise an allow to a hold and never lower
+  a verdict. It has a 6 s cap and fails closed to hold.
+- **Record and replay.** `PAPERWEIGHT_MODE=record` stores each response under a hash of
+  the request in `recordings/`; `replay` serves them without touching the network. The
+  eval tables, the adaptive attacker and the demo above all run from these, so they stay
+  reproducible if a model ID is retired. A cut at `max_tokens` is recorded too, so a
+  replay shows the same failure.
+- **Spend cap.** `PAPERWEIGHT_MAX_LIVE_CALLS` caps paid calls per process. Past it,
+  every parcel fails closed to `HOLD`.
 
 ## Threat model
 
@@ -171,7 +199,26 @@ Line-based ASCII over USB serial at 115200 baud.
 | `PRIV OPEN` | `ARRIVAL <cm>`, `DEPARTURE` |
 | `LCD <text>` | |
 
-<!-- todo: wiring table and photo -->
+### Wiring
+
+Arduino Uno, everything on 5 V and a shared ground. The camera is separate: a Tapo
+over RTSP, or any webcam index, set in `CAMERA_SOURCE`.
+
+| Part | Pin | Notes |
+|---|---|---|
+| Gate servo | D9 | Rest 0°, bin A 90°, bin B 150°, bin C 180° |
+| HC-SR04 sonar | TRIG D11, ECHO D10 | A parcel closer than 12 cm counts as arrived |
+| LED bin A | D2 | Each with a series resistor, lit for 3 s |
+| LED bin B | D4 | |
+| LED bin C | D3 | |
+| LED hold (yellow) | D5 | `PRIV OPEN` lights yellow and red together |
+| LED deny (red) | D6 | |
+| LCD 1602 (optional) | A0-A5 | Off by default, `HAS_LCD` in the firmware |
+
+The firmware also drives an active buzzer on D8, but the station shown in the demo has
+none: the console plays the verdict sounds.
+
+<!-- todo: photo of the station -->
 
 ## Limitations
 
@@ -184,6 +231,8 @@ Line-based ASCII over USB serial at 115200 baud.
   only exercised on real photos (3 frames).
 - About 10 s per decision (p50) on the real photos, most of it the planner reasoning.
   Fine for a station that waits for a parcel, too slow for a moving belt.
+  It also depends on Token Factory load: during one 11-minute dip on Oct 28 the same
+  decisions took 12-15 s.
 - With thinking on, the planner can reason past `max_tokens`; that fails closed to
   `HOLD`. It happened 12 times before the planner prompt was fixed and 0 times in the
   current runs. The cut is recorded, so replays show the same error.
@@ -194,7 +243,14 @@ Line-based ASCII over USB serial at 115200 baud.
 
 ## AI tools used
 
-<!-- todo: ai tools used -->
+- **Nemotron on Nebius Token Factory** is part of the product: perception, planner and
+  reasoning check, as described above.
+- **Claude Code** (Anthropic) was used as a coding assistant throughout: code, firmware,
+  eval scripts, tests and drafts of this README. The design, the threat model and the
+  policy rules were decided by the author, and every number in this README comes from
+  the eval scripts in this repo.
+- The synthetic corpus is drawn with Pillow from templates in `eval/synth/`. No image
+  model was used. The real corpus is photos of real parcels.
 
 ## License
 
