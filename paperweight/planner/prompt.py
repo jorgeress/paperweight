@@ -34,7 +34,12 @@ def render_task(task: OperatorTask) -> str:
         lines.append(f"- any other {task.route_slot} -> bin {task.routing_default}")
     for grant in task.grants:
         params = ", ".join(f"{k}={v}" for k, v in grant.params.items())
-        lines.append(f"Operator grant for this parcel: {grant.kind}({params})")
+        # note: worded as an order, read as a mere permission the planner just routed and never used it
+        lines.append(
+            f"Operator order for this parcel: {grant.kind}({params}). Propose it after the usual route or hold,"
+            ' citing "operator" for its params. The route stays as always: the bin comes from the routing table'
+            ' above and cites "operator".'
+        )
     if task.instructions:
         lines.append(f"Operator notes: {task.instructions}")
     return "\n".join(lines)
