@@ -64,17 +64,15 @@ void beep(byte times, int ms) {
   }
 }
 
-void light(byte pin) {
-  allLightsOff();
-  digitalWrite(pin, HIGH);
-  lightsOffAt = millis() + LIGHT_MS;
-}
+// note: priv open lights yellow and red; the bin sent right after it keeps them lit beside its own led
+bool cageJustOpened = false;
 
-// note: a bin only clears the bin leds, so a cage opened just before stays lit next to it
-void lightBin(byte pin) {
-  digitalWrite(PIN_LED_A, LOW);
-  digitalWrite(PIN_LED_B, LOW);
-  digitalWrite(PIN_LED_C, LOW);
+void light(byte pin, bool keepCage) {
+  allLightsOff();
+  if (keepCage) {
+    digitalWrite(PIN_LED_HOLD, HIGH);
+    digitalWrite(PIN_LED_DENY, HIGH);
+  }
   digitalWrite(pin, HIGH);
   lightsOffAt = millis() + LIGHT_MS;
 }
@@ -91,9 +89,9 @@ int readDistanceCm() {
 }
 
 void routeTo(char bin) {
-  if (bin == 'A') { gate.write(GATE_A); lightBin(PIN_LED_A); }
-  else if (bin == 'B') { gate.write(GATE_B); lightBin(PIN_LED_B); }
-  else if (bin == 'C') { gate.write(GATE_C); lightBin(PIN_LED_C); }
+  if (bin == 'A') { gate.write(GATE_A); light(PIN_LED_A, cageJustOpened); }
+  else if (bin == 'B') { gate.write(GATE_B); light(PIN_LED_B, cageJustOpened); }
+  else if (bin == 'C') { gate.write(GATE_C); light(PIN_LED_C, cageJustOpened); }
   else { Serial.println(F("ERR bad-bin")); return; }
   beep(1, 60);
   showMessage(String("BIN ") + bin);
@@ -111,19 +109,18 @@ void handle(const String &cmd) {
     routeTo(cmd.charAt(4));
   } else if (cmd == "HOLD") {
     gate.write(GATE_REST);
-    light(PIN_LED_HOLD);
+    light(PIN_LED_HOLD, false);
     beep(2, 120);
     showMessage("HOLD");
     Serial.println(F("OK HOLD"));
   } else if (cmd == "DENY") {
     gate.write(GATE_REST);
-    light(PIN_LED_DENY);
+    light(PIN_LED_DENY, false);
     beep(3, 200);
     showMessage("DENY");
     Serial.println(F("OK DENY"));
   } else if (cmd == "PRIV OPEN") {
-    light(PIN_LED_HOLD);
-    digitalWrite(PIN_LED_DENY, HIGH);
+    light(PIN_LED_HOLD, true);
     beep(1, 400);
     showMessage("PRIV OPEN");
     Serial.println(F("OK PRIV OPEN"));
@@ -133,6 +130,7 @@ void handle(const String &cmd) {
   } else {
     Serial.println(F("ERR unknown"));
   }
+  cageJustOpened = cmd == "PRIV OPEN";
 }
 
 void setup() {
