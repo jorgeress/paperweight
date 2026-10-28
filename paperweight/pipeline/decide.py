@@ -9,6 +9,7 @@ from paperweight.policy.escalate import escalate_verdict
 from paperweight.policy.judge import judge_action
 from paperweight.policy.task import Grant, OperatorTask
 from paperweight.reasoning_check.review import review_reasoning
+from paperweight.station.command import command_for
 from paperweight.token_factory.client import Completion
 
 
@@ -61,7 +62,7 @@ def decide_parcel(
         review=review,
         commands=commands,
         lcd=lcd,
-        consumed_grants=consumed_grants(judged, task),
+        consumed_grants=consumed_grants(judged, task, commands),
         stages=stages,
     )
 
@@ -72,10 +73,13 @@ def fail_closed(base: dict, stages: list[StageCost], error: str) -> Decision:
     return Decision(**base, commands=["HOLD"], lcd="HOLD stage error", stages=stages, error=error)
 
 
-def consumed_grants(judged: list[JudgedAction], task: OperatorTask) -> list[Grant]:
+def consumed_grants(judged: list[JudgedAction], task: OperatorTask, commands: list[str]) -> list[Grant]:
     used = []
     for j in judged:
         if j.final_verdict.kind != "allow" or j.action.kind not in task.privileged_actions:
+            continue
+        # note: a plan that ends in HOLD never sends the privileged command, so the grant must survive it
+        if command_for(j.action, j.final_verdict) not in commands:
             continue
         wanted = {k: v.value for k, v in j.action.params.items()}
         used += [g for g in task.grants if g.kind == j.action.kind and g.params == wanted]

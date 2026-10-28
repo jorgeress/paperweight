@@ -1,7 +1,9 @@
+from paperweight.pipeline.decide import consumed_grants
 from paperweight.pipeline.decision import JudgedAction
 from paperweight.pipeline.outcome_rules import choose_commands
 from paperweight.policy.action import ProposedAction
 from paperweight.policy.escalate import escalate_verdict
+from paperweight.policy.task import Grant, OperatorTask, Slot
 from paperweight.policy.verdict import Allow, Deny, Hold, RuleHit
 from paperweight.provenance.observation import OPERATOR, CitedValue
 from paperweight.reasoning_check.review import ReasoningReview
@@ -59,3 +61,29 @@ def test_missing_review_fails_closed():
 
 def test_clean_review_keeps_allow():
     assert escalate_verdict(Allow(), ReasoningReview(obeys_scene_text=False, quote="")).kind == "allow"
+
+
+def granted_task() -> OperatorTask:
+    return OperatorTask(
+        allowed_actions=frozenset({"route", "hold"}),
+        privileged_actions=frozenset({"priv_open"}),
+        slots=(Slot(name="destination_city"),),
+        route_slot="destination_city",
+        routing={"MADRID": "A"},
+        routing_default="C",
+        grants=(Grant(kind="priv_open", params={"cage": "R1"}),),
+    )
+
+
+def test_grant_is_spent_when_priv_open_is_sent():
+    plan = [judged(ROUTE_A, Allow()), judged(PRIV, Allow())]
+    commands, _ = choose_commands(plan)
+    assert consumed_grants(plan, granted_task(), commands) == list(granted_task().grants)
+
+
+def test_grant_survives_a_plan_that_ends_in_hold():
+    hold = ProposedAction(kind="hold", params={"reason": CitedValue(value="label unreadable", cite=OPERATOR)})
+    plan = [judged(hold, Allow()), judged(PRIV, Allow())]
+    commands, _ = choose_commands(plan)
+    assert commands == ["HOLD"]
+    assert consumed_grants(plan, granted_task(), commands) == []
