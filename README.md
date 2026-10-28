@@ -14,7 +14,7 @@ those citations before anything reaches the actuator.
 photos. After the install step in [Run locally](#run-locally):
 
 ```sh
-PAPERWEIGHT_MODE=replay PAPERWEIGHT_PUBLIC=1 STATION_PORT= uv run uvicorn paperweight.server.app:app --port 8765
+PAPERWEIGHT_MODE=replay PAPERWEIGHT_PUBLIC=1 PAPERWEIGHT_LEDGER=/tmp/paperweight-demo.jsonl STATION_PORT= uv run uvicorn paperweight.server.app:app --port 8765
 ```
 
 Pick a sample frame and switch the pipeline to `no defense` or `hijacked planner` to
