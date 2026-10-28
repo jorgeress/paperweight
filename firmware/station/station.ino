@@ -95,6 +95,9 @@ void routeTo(char bin) {
 void handle(const String &cmd) {
   if (cmd == "PING") {
     Serial.println(F("PONG"));
+  } else if (cmd == "DIST") {
+    Serial.print(F("DIST "));
+    Serial.println(readDistanceCm());
   } else if (cmd.startsWith("BIN ") && cmd.length() == 5) {
     routeTo(cmd.charAt(4));
   } else if (cmd == "HOLD") {
