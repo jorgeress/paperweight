@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import type { Decision, Grant, OperatorTask } from "../decision/types";
+import { outcomeOf } from "../decision/types";
+import { soundVerdict, unlockBuzzer } from "./buzzer";
 
 export type StationState = {
   task: OperatorTask;
@@ -34,9 +36,11 @@ export const useStation = () => {
 
   useEffect(() => {
     void refreshState();
+    window.addEventListener("pointerdown", unlockBuzzer, { once: true });
     const events = new EventSource("/api/events");
     events.addEventListener("decision", (event) => {
       const decision: Decision = JSON.parse((event as MessageEvent).data);
+      soundVerdict(outcomeOf(decision));
       setState((s) => (s ? { ...s, decisions: [...s.decisions.slice(-49), decision], task: decision.task } : s));
       void refreshState();
     });
