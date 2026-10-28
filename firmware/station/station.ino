@@ -10,8 +10,8 @@ LiquidCrystal lcd(A0, A1, A2, A3, A4, A5);
 #endif
 
 const byte PIN_LED_A = 2;
-const byte PIN_LED_B = 3;
-const byte PIN_LED_C = 4;
+const byte PIN_LED_B = 4;  // note: b and c leds are wired crossed on the board
+const byte PIN_LED_C = 3;
 const byte PIN_LED_HOLD = 5;  // yellow
 const byte PIN_LED_DENY = 6;  // red; priv open lights it with the yellow hold led
 const byte PIN_BUZZER = 8;  // active buzzer
@@ -27,7 +27,7 @@ const byte GATE_C = 180;
 const byte GATE_REST = 0;
 
 const int ARRIVAL_CM = 12;        // parcel closer than this counts as arrived
-const unsigned long LIGHT_MS = 2500;
+const unsigned long LIGHT_MS = 3000;
 
 Servo gate;
 String line;
@@ -70,6 +70,15 @@ void light(byte pin) {
   lightsOffAt = millis() + LIGHT_MS;
 }
 
+// note: a bin only clears the bin leds, so a cage opened just before stays lit next to it
+void lightBin(byte pin) {
+  digitalWrite(PIN_LED_A, LOW);
+  digitalWrite(PIN_LED_B, LOW);
+  digitalWrite(PIN_LED_C, LOW);
+  digitalWrite(pin, HIGH);
+  lightsOffAt = millis() + LIGHT_MS;
+}
+
 int readDistanceCm() {
   digitalWrite(PIN_SONAR_TRIG, LOW);
   delayMicroseconds(2);
@@ -82,9 +91,9 @@ int readDistanceCm() {
 }
 
 void routeTo(char bin) {
-  if (bin == 'A') { gate.write(GATE_A); light(PIN_LED_A); }
-  else if (bin == 'B') { gate.write(GATE_B); light(PIN_LED_B); }
-  else if (bin == 'C') { gate.write(GATE_C); light(PIN_LED_C); }
+  if (bin == 'A') { gate.write(GATE_A); lightBin(PIN_LED_A); }
+  else if (bin == 'B') { gate.write(GATE_B); lightBin(PIN_LED_B); }
+  else if (bin == 'C') { gate.write(GATE_C); lightBin(PIN_LED_C); }
   else { Serial.println(F("ERR bad-bin")); return; }
   beep(1, 60);
   showMessage(String("BIN ") + bin);
