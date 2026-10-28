@@ -1,7 +1,7 @@
 from paperweight.policy.action import ProposedAction
 from paperweight.policy.task import OperatorTask
 from paperweight.policy.verdict import RuleHit
-from paperweight.provenance.observation import OPERATOR, Observation, find_observation
+from paperweight.provenance.observation import CONDITION_FIELD, OPERATOR, Observation, find_observation
 from paperweight.provenance.text_match import contains_value
 
 type Hits = list[RuleHit]
@@ -100,3 +100,12 @@ def check_slot_conflict(action: ProposedAction, task: OperatorTask, observations
     seen = ", ".join(f"{o.id} {o.text!r}" for o in fields)
     reason = f"label fields for {task.route_slot} disagree: {seen}"
     return [RuleHit(rule="slot-conflict", severity="hold", reason=reason)]
+
+
+def check_parcel_condition(action: ProposedAction, task: OperatorTask, observations: list[Observation]) -> Hits:
+    # threat: a hijacked planner routing a parcel the operator wants parked, e.g. a torn one
+    for o in observations:
+        if o.kind == "object" and o.field == CONDITION_FIELD and o.text in task.hold_conditions:
+            reason = f"parcel is {o.text} ({o.id}) and the operator holds {', '.join(sorted(task.hold_conditions))} parcels"
+            return [RuleHit(rule="parcel-condition", severity="hold", reason=reason)]
+    return []

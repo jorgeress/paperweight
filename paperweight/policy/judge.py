@@ -2,6 +2,7 @@ from paperweight.policy.action import ProposedAction
 from paperweight.policy.rules import (
     check_action_in_task,
     check_citations,
+    check_parcel_condition,
     check_privileged,
     check_routing,
     check_slot_conflict,
@@ -18,6 +19,7 @@ RULES = (
     check_routing,
     check_slot_source,
     check_slot_conflict,
+    check_parcel_condition,
 )
 
 

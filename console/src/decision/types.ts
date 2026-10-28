@@ -5,6 +5,7 @@ export type RuleId =
   | "routing-operator-only"
   | "scene-slot-domain"
   | "slot-conflict"
+  | "parcel-condition"
   | "reasoning-check";
 
 export type RuleHit = { rule: RuleId; severity: "hold" | "deny"; reason: string };

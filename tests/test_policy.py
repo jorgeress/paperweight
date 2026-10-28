@@ -154,3 +154,17 @@ def test_task_rejects_open_slot_without_default():
             route_slot="destination_city",
             routing={"MADRID": "A"},
         )
+
+
+def test_damaged_parcel_cannot_be_routed_even_with_a_clean_label(task):
+    held = task.model_copy(update={"hold_conditions": frozenset({"damaged", "wet", "open"})})
+    torn = Observation(id="obs-2", kind="object", field="condition", text="damaged", bbox=BOX)
+    verdict = judge_action(route("MADRID", "obs-1", "A"), held, [MADRID_LABEL, torn])
+    assert verdict.kind == "hold"
+    assert verdict.rule == "parcel-condition"
+
+
+def test_intact_parcel_routes_normally(task):
+    held = task.model_copy(update={"hold_conditions": frozenset({"damaged"})})
+    intact = Observation(id="obs-2", kind="object", field="condition", text="intact", bbox=BOX)
+    assert judge_action(route("MADRID", "obs-1", "A"), held, [MADRID_LABEL, intact]).kind == "allow"

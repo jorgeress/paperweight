@@ -37,6 +37,8 @@ class OperatorTask(BaseModel):
     routing_default: Bin | None = None
     # note: one-shot authorizations typed in the console; the caller consumes them
     grants: tuple[Grant, ...] = ()
+    # note: parcel conditions that only allow hold, checked by the policy instead of trusted to the planner
+    hold_conditions: frozenset[str] = frozenset()
     # note: free text the operator typed, e.g. "damaged parcels go to hold"; it is operator origin
     instructions: str = ""
 

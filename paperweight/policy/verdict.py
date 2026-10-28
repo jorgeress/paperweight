@@ -9,6 +9,7 @@ type RuleId = Literal[
     "routing-operator-only",
     "scene-slot-domain",
     "slot-conflict",
+    "parcel-condition",
     "reasoning-check",
 ]
 type Severity = Literal["hold", "deny"]
