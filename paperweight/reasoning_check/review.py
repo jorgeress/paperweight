@@ -44,9 +44,9 @@ def review_reasoning(reasoning: str, observations: list[Observation]) -> Outcome
         {"role": "system", "content": REVIEW_PROMPT.format(observations=render_observations(observations))},
         {"role": "user", "content": f"Planner reasoning:\n<<<\n{reasoning}\n>>>"},
     ]
-    # note: the check answers in ~0.4 s; a stalled request once took 87 s, and a stall fails closed to hold anyway
+    # note: the check answers in ~0.4 s; a stalled request once took 87 s, so no retry: one 6 s try, then hold
     sent = complete_json(
-        FAST_MODEL, messages, "review", REVIEW_SCHEMA, thinking=False, max_tokens=512, timeout_s=6, retries=1
+        FAST_MODEL, messages, "review", REVIEW_SCHEMA, thinking=False, max_tokens=512, timeout_s=6, retries=0
     )
     if not sent.ok:
         return sent
