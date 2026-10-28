@@ -19,10 +19,11 @@ const byte PIN_SERVO = 9;
 const byte PIN_SONAR_TRIG = 11;
 const byte PIN_SONAR_ECHO = 10;
 
-const byte GATE_A = 30;
-const byte GATE_B = 90;
-const byte GATE_C = 150;
-const byte GATE_REST = 90;
+const byte GATE_A = 65;
+const byte GATE_B = 115;
+const byte GATE_C = 165;
+// note: rest is the hold position, so a gate that gets no valid decision stays parked
+const byte GATE_REST = 15;
 
 const int ARRIVAL_CM = 12;        // parcel closer than this counts as arrived
 const unsigned long LIGHT_MS = 2500;
