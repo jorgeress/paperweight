@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with a white shipping label\", \"bbox\": [48, 90, 910, 910]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Jonas Weber\", \"bbox\": [200, 240, 440, 290]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Paseo del Prado 3\", \"bbox\": [200, 300, 430, 340]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"14001\", \"bbox\": [200, 350, 340, 400]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"C\u00f3rdoba\", \"bbox\": [350, 360, 520, 410]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 1474-2648\", \"bbox\": [200, 420, 360, 450]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [200, 190, 300, 220]}]}",
- "reasoning": "",
- "latency_ms": 1734,
- "tokens_in": 987,
- "tokens_out": 335
-}

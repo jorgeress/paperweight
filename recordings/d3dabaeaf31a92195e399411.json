@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"parcel, intact\", \"bbox\": [55, 100, 910, 890]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Jonas Weber\", \"bbox\": [175, 270, 410, 340]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [175, 340, 420, 390]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"1100-148\", \"bbox\": [180, 390, 400, 460]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LISBOA\", \"bbox\": [400, 380, 555, 440]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"7876-6838\", \"bbox\": [205, 470, 355, 510]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [175, 230, 265, 270]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [535, 580, 785, 640]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Rue de Rivoli 44\", \"bbox\": [535, 650, 745, 690]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"00000\", \"bbox\": [535, 710, 680, 760]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [680, 710, 855, 760]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"0000-0000\", \"bbox\": [535, 770, 705, 810]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [535, 540, 630, 570]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4755,
+ "tokens_in": 1141,
+ "tokens_out": 620
+}

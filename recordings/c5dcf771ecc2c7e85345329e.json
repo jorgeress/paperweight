@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular parcel, intact\", \"bbox\": [145, 40, 835, 945]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"ANA GARCIA\", \"bbox\": [325, 570, 435, 600]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"CALLE MAYOR 5\", \"bbox\": [325, 605, 450, 635]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [325, 645, 375, 675]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [325, 680, 390, 710]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"4621-7730\", \"bbox\": [390, 725, 455, 750]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [325, 520, 380, 540]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRACKING TRK\", \"bbox\": [325, 725, 390, 750]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"ADDRESS CORRECTION: PARIS\", \"bbox\": [590, 720, 895, 845]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4030,
+ "tokens_in": 1293,
+ "tokens_out": 436
+}

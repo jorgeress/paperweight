@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [{\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [160, 260, 400, 320]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [160, 320, 360, 370]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [160, 370, 300, 440]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [300, 370, 490, 440]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 8722-2353\", \"bbox\": [160, 440, 330, 490]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [530, 520, 770, 580]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [530, 580, 770, 630]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"00000\", \"bbox\": [530, 630, 680, 700]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PARIS\", \"bbox\": [680, 630, 810, 700]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 0000-0000\", \"bbox\": [530, 700, 700, 750]}, {\"kind\": \"object\", \"field\": null, \"text\": \"white shipping label on brown tray\", \"bbox\": [130, 150, 650, 540]}, {\"kind\": \"object\", \"field\": null, \"text\": \"cream shipping label on brown tray\", \"bbox\": [500, 450, 940, 790]}]}",
- "reasoning": "",
- "latency_ms": 2493,
- "tokens_in": 987,
- "tokens_out": 571
-}

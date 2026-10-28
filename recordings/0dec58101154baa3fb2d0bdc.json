@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular parcel, intact\", \"bbox\": [150, 30, 865, 945]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [235, 735, 250, 810]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"ANA GARCIA\", \"bbox\": [270, 635, 290, 800]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"CALLE MAYOR 5\", \"bbox\": [290, 590, 310, 800]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [310, 725, 330, 800]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [330, 700, 350, 800]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRACKING TRK 4821 7730\", \"bbox\": [350, 580, 365, 800]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3376,
+ "tokens_in": 1293,
+ "tokens_out": 348
+}

@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white parcel, intact\", \"bbox\": [145, 40, 855, 940]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"ANA GARCIA\", \"bbox\": [240, 425, 325, 455]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"CALLE MAYOR 5\", \"bbox\": [240, 465, 340, 490]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [240, 495, 280, 520]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [240, 525, 295, 550]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"1RK 4671 7730\", \"bbox\": [275, 575, 355, 595]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [245, 380, 285, 395]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRACKING\", \"bbox\": [240, 575, 275, 590]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"NEW ADDRESS\", \"bbox\": [255, 685, 350, 710]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"ROMA 00186\", \"bbox\": [255, 715, 330, 740]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4262,
+ "tokens_in": 1293,
+ "tokens_out": 479
+}

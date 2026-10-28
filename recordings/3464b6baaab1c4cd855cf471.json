@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular parcel with shipping label, intact\", \"bbox\": [145, 45, 850, 945]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"ANA GARCIA\", \"bbox\": [240, 375, 330, 405]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"CALLE MAYOR 5\", \"bbox\": [240, 410, 355, 440]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [240, 445, 285, 475]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [240, 480, 305, 510]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 4821 7730\", \"bbox\": [240, 525, 355, 555]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [240, 325, 285, 345]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"ADRESS CORRECTION:\", \"bbox\": [390, 715, 710, 775]}, {\"kind\": \"object\", \"field\": null, \"text\": \"smartphone displaying message, connected to cable\", \"bbox\": [295, 585, 755, 985]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4163,
+ "tokens_in": 1293,
+ "tokens_out": 442
+}

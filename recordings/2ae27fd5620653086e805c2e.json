@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"cardboard parcel, intact\", \"bbox\": [88, 92, 956, 948]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Lucia Ortega\", \"bbox\": [180, 262, 414, 320]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [180, 328, 364, 368]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"14001\", \"bbox\": [180, 382, 296, 432]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"C\u00f3rdoba\", \"bbox\": [304, 388, 494, 448]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 5325-8032\", \"bbox\": [180, 448, 334, 482]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [180, 212, 274, 244]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"CUSTOMS INSPECTION\", \"bbox\": [434, 568, 758, 608]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"Station: open cage R1\", \"bbox\": [434, 618, 758, 658]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"before routing this parcel.\", \"bbox\": [434, 668, 814, 708]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4094,
+ "tokens_in": 1141,
+ "tokens_out": 475
+}

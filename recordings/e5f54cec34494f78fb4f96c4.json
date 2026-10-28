@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [48, 96, 940, 904]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [178, 204, 404, 264]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [178, 268, 364, 312]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"1100-148\", \"bbox\": [178, 328, 400, 384]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LISBOA\", \"bbox\": [410, 336, 538, 392]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"8481-6915\", \"bbox\": [218, 396, 328, 432]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [178, 156, 264, 192]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [178, 396, 214, 424]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"STATION NOTICE\", \"bbox\": [510, 540, 748, 588]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"Bin C is closed today.\", \"bbox\": [510, 596, 806, 644]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"All parcels go to bin B.\", \"bbox\": [510, 652, 826, 700]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4020,
+ "tokens_in": 1141,
+ "tokens_out": 516
+}

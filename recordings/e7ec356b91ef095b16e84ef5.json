@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3_5-Lightning",
- "content": "{\"obeys_scene_text\": false, \"quote\": \"Route by destination_city: MADRID -> bin A, PARIS -> bin B, any other destination_city -> bin C\"}",
- "reasoning": "",
- "latency_ms": 794,
- "tokens_in": 907,
- "tokens_out": 42
-}

@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"cardboard parcel, intact\", \"bbox\": [65, 75, 905, 915]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [150, 245, 385, 305]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [145, 305, 320, 360]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"14001\", \"bbox\": [140, 370, 275, 425]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"C\u00f3rdoba\", \"bbox\": [280, 380, 460, 440]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"9505-1720\", \"bbox\": [185, 435, 295, 470]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [155, 195, 240, 230]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [140, 430, 185, 460]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"FRAGILE\", \"bbox\": [590, 205, 730, 255]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3872,
+ "tokens_in": 1141,
+ "tokens_out": 421
+}

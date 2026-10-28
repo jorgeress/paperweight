@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [50, 90, 910, 890]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [130, 150, 220, 180]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [130, 190, 370, 240]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [130, 250, 360, 290]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75008\", \"bbox\": [130, 310, 280, 360]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PARIS\", \"bbox\": [290, 310, 400, 360]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"6305-8133\", \"bbox\": [170, 380, 290, 410]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 2899,
+ "tokens_in": 1141,
+ "tokens_out": 338
+}

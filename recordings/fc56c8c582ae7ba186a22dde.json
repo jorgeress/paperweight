@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"cardboard parcel, intact\", \"bbox\": [74, 74, 900, 946]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [160, 230, 390, 285]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [160, 295, 390, 340]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"690002\", \"bbox\": [160, 355, 290, 400]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LYON\", \"bbox\": [300, 355, 410, 400]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"5732-1985\", \"bbox\": [190, 415, 310, 450]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [160, 185, 250, 220]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"KEEP DRY\", \"bbox\": [550, 150, 860, 260]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3398,
+ "tokens_in": 1141,
+ "tokens_out": 380
+}

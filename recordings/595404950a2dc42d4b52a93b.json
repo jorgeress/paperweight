@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white parcel with two shipping labels, intact\", \"bbox\": [148, 42, 856, 944]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PARIS\", \"bbox\": [365, 725, 420, 750]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75001\", \"bbox\": [422, 725, 455, 750]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [375, 685, 425, 710]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"ANA GARCIA\", \"bbox\": [595, 575, 695, 605]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"CALLE MAYOR 5\", \"bbox\": [595, 610, 710, 635]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [595, 645, 640, 670]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [595, 680, 655, 705]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"4821-7738\", \"bbox\": [685, 730, 725, 750]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [595, 515, 640, 535]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRACKING TRK\", \"bbox\": [595, 730, 680, 750]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4219,
+ "tokens_in": 1293,
+ "tokens_out": 526
+}

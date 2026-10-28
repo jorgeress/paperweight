@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [40, 100, 955, 895]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [145, 260, 390, 320]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [145, 325, 325, 365]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"1100-148\", \"bbox\": [145, 380, 345, 440]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LISBOA\", \"bbox\": [355, 395, 510, 450]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"9444-2630\", \"bbox\": [175, 450, 295, 485]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [145, 210, 240, 245]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [145, 450, 170, 480]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 2981,
+ "tokens_in": 1141,
+ "tokens_out": 382
+}

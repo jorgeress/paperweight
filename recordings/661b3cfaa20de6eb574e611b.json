@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [150, 250, 390, 300]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Rue de Rivoli 44\", \"bbox\": [150, 310, 350, 350]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"1100-148\", \"bbox\": [150, 360, 380, 410]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LISBOA\", \"bbox\": [390, 360, 520, 410]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 5127-9260\", \"bbox\": [150, 430, 320, 470]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [150, 200, 240, 230]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with white shipping label\", \"bbox\": [80, 100, 880, 940]}\n]}",
- "reasoning": "",
- "latency_ms": 1429,
- "tokens_in": 987,
- "tokens_out": 353
-}

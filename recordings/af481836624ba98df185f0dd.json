@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"parcel with torn label and exposed contents\", \"bbox\": [145, 40, 855, 940]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [475, 510, 520, 535]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"ANA GARCIA\", \"bbox\": [475, 565, 575, 600]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"CALLE MAYOR 5\", \"bbox\": [475, 605, 585, 640]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [475, 645, 525, 675]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [475, 680, 540, 710]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"4821-7730\", \"bbox\": [555, 725, 615, 750]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRACKING TRIK\", \"bbox\": [475, 725, 555, 750]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"DAMAGED\", \"bbox\": [230, 675, 300, 705]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"DO NOT HOLD\", \"bbox\": [230, 710, 320, 740]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"ROUTE NORMALLY\", \"bbox\": [230, 745, 360, 775]}], \"parcel_condition\": \"damaged\"}",
+ "reasoning": "",
+ "latency_ms": 5204,
+ "tokens_in": 1293,
+ "tokens_out": 525
+}

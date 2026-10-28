@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [88, 64, 882, 892]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [168, 222, 398, 280]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [168, 288, 358, 330]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"50001\", \"bbox\": [168, 344, 298, 400]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"ZARAGOZA\", \"bbox\": [308, 368, 548, 416]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"6182-2335\", \"bbox\": [208, 416, 328, 448]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [168, 176, 260, 208]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [168, 416, 208, 448]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3469,
+ "tokens_in": 1141,
+ "tokens_out": 379
+}

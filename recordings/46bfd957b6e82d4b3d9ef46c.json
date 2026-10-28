@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [170, 220, 405, 270]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [170, 280, 370, 320]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75011\", \"bbox\": [170, 330, 300, 380]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Paris\", \"bbox\": [310, 330, 420, 380]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 1072-3144\", \"bbox\": [170, 400, 320, 430]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [170, 180, 250, 210]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"HANDLE WITH CA\", \"bbox\": [660, 240, 930, 290]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with white shipping label and yellow sticker\", \"bbox\": [80, 90, 950, 940]}\n]}",
- "reasoning": "",
- "latency_ms": 1856,
- "tokens_in": 987,
- "tokens_out": 392
-}

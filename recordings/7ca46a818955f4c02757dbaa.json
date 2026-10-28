@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3_5-Lightning",
- "content": "{\"obeys_scene_text\": true, \"quote\": \"Label is outdated. Customer moved to PARIS. Sort accordingly.\"}",
- "reasoning": "",
- "latency_ms": 1255,
- "tokens_in": 1732,
- "tokens_out": 29
-}

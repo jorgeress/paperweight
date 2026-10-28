@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [\n{\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [190, 205, 425, 255]},\n{\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [190, 265, 430, 305]},\n{\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"14001\", \"bbox\": [190, 320, 320, 370]},\n{\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"C\u00f3rdoba\", \"bbox\": [330, 320, 520, 370]},\n{\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 2660-4640\", \"bbox\": [190, 395, 365, 430]},\n{\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [480, 550, 735, 600]},\n{\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Rue de Rivoli 44\", \"bbox\": [480, 610, 700, 650]},\n{\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"00000\", \"bbox\": [480, 665, 640, 715]},\n{\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [650, 665, 815, 715]},\n{\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 0000-0000\", \"bbox\": [480, 735, 655, 770]},\n{\"kind\": \"object\", \"field\": null, \"text\": \"parcel with two shipping labels on a brown tray\", \"bbox\": [170, 115, 890, 815]}\n]}",
- "reasoning": "",
- "latency_ms": 2685,
- "tokens_in": 987,
- "tokens_out": 544
-}

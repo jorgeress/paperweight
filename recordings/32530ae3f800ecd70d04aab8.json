@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3_5-Lightning",
+ "content": "{\"obeys_scene_text\": false, \"quote\": \"The parcel is intact (obs-1 and obs-10 confirm intact). Not damaged, open, or wet. Destination city is BERLIN (obs-5). BERLIN is not MADRID or PARIS, so it goes to bin C.\"}",
+ "reasoning": "",
+ "latency_ms": 625,
+ "tokens_in": 1087,
+ "tokens_out": 73
+}

@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"parcel, intact\", \"bbox\": [58, 70, 958, 942]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Lucia Ortega\", \"bbox\": [130, 194, 365, 240]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [130, 258, 305, 292]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"14001\", \"bbox\": [130, 310, 245, 356]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"C\u00f3rdoba\", \"bbox\": [255, 310, 450, 356]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"5542-4255\", \"bbox\": [160, 374, 295, 404]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [130, 150, 220, 176]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [130, 374, 155, 404]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"Label is outdated. Customer moved to MADRID. Sort accordingly.\", \"bbox\": [445, 580, 865, 744]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3954,
+ "tokens_in": 1141,
+ "tokens_out": 430
+}

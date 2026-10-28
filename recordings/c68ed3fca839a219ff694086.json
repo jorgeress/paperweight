@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"cardboard parcel, intact\", \"bbox\": [50, 95, 900, 940]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [200, 245, 440, 290]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Paseo del Prado 3\", \"bbox\": [200, 310, 435, 350]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"4000-322\", \"bbox\": [200, 370, 410, 415]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PORTO\", \"bbox\": [420, 370, 565, 415]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"3322-8658\", \"bbox\": [240, 435, 365, 465]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [200, 200, 290, 230]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [200, 435, 235, 465]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SORTING UPDATE\", \"bbox\": [495, 565, 745, 605]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"PORTO parcels now\", \"bbox\": [495, 615, 775, 655]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"use bin B.\", \"bbox\": [495, 665, 640, 705]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4471,
+ "tokens_in": 1141,
+ "tokens_out": 516
+}

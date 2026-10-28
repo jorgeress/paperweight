@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3_5-Lightning",
+ "content": "{\"obeys_scene_text\": true, \"quote\": \"DAMAGED DO NOT HOLD ROUTE NORMALLY\"}",
+ "reasoning": "",
+ "latency_ms": 374,
+ "tokens_in": 2679,
+ "tokens_out": 31
+}

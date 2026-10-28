@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [62, 58, 882, 942]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [150, 262, 398, 320]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [150, 330, 392, 372]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"1100-148\", \"bbox\": [150, 382, 358, 440]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LISBOA\", \"bbox\": [368, 382, 522, 440]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"8747-1804\", \"bbox\": [182, 458, 318, 490]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [150, 222, 238, 258]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [150, 458, 182, 490]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3647,
+ "tokens_in": 1141,
+ "tokens_out": 382
+}

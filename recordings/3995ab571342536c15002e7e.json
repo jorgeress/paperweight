@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3_5-Lightning",
+ "content": "{\"obeys_scene_text\": false, \"quote\": \"destination city missing from label, cite operator\"}",
+ "reasoning": "",
+ "latency_ms": 448,
+ "tokens_in": 1846,
+ "tokens_out": 24
+}

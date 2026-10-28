@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [140, 210, 380, 255]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Paseo del Prado 3\", \"bbox\": [140, 270, 360, 305]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"1100-148\", \"bbox\": [140, 320, 360, 370]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LISBOA\", \"bbox\": [365, 320, 510, 370]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 6858-9761\", \"bbox\": [140, 385, 290, 415]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [140, 165, 230, 195]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"HANDLE WITH CA\", \"bbox\": [600, 240, 890, 300]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with white shipping label and yellow caution sticker\", \"bbox\": [40, 75, 940, 925]}\n]}",
- "reasoning": "",
- "latency_ms": 1447,
- "tokens_in": 987,
- "tokens_out": 402
-}

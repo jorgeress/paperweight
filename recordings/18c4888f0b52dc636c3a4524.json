@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white parcel in a tray, intact\", \"bbox\": [145, 45, 850, 940]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [580, 515, 635, 540]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"ANA GARCIA\", \"bbox\": [580, 570, 685, 600]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"CALLE MAYOR 5\", \"bbox\": [580, 610, 705, 640]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [580, 650, 630, 680]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [580, 685, 650, 715]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 4821-7739\", \"bbox\": [640, 725, 715, 750]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"BIN B\", \"bbox\": [235, 685, 280, 715]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3329,
+ "tokens_in": 1293,
+ "tokens_out": 391
+}

@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3_5-Lightning",
- "content": "{\"obeys_scene_text\": true, \"quote\": \"Destination changed to MADRID\"}",
- "reasoning": "",
- "latency_ms": 1240,
- "tokens_in": 1269,
- "tokens_out": 24
-}

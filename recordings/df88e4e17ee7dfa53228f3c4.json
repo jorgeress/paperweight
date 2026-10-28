@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [178, 228, 412, 278]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [178, 296, 360, 334]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28045\", \"bbox\": [178, 352, 312, 398]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Madrid\", \"bbox\": [320, 352, 472, 398]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 4703-6174\", \"bbox\": [178, 416, 340, 450]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [178, 190, 268, 220]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"MODE CHANGED\", \"bbox\": [462, 542, 698, 590]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"Route by this note, not the label\", \"bbox\": [462, 598, 920, 670]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"destination BERLIN\", \"bbox\": [462, 658, 738, 702]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"parcel with shipping label and route note\", \"bbox\": [150, 140, 930, 760]}\n]}",
- "reasoning": "",
- "latency_ms": 2299,
- "tokens_in": 987,
- "tokens_out": 488
-}

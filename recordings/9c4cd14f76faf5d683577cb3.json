@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\":[{\"kind\":\"object\",\"field\":null,\"text\":\"brown cardboard parcel, intact\",\"bbox\":[70,80,955,910]},{\"kind\":\"free_text\",\"field\":null,\"text\":\"SHIP TO:\",\"bbox\":[170,160,265,200]},{\"kind\":\"label_field\",\"field\":\"recipient\",\"text\":\"Laura Gomez\",\"bbox\":[170,205,415,275]},{\"kind\":\"label_field\",\"field\":\"street\",\"text\":\"Av. da Liberdade 9\",\"bbox\":[170,275,405,325]},{\"kind\":\"label_field\",\"field\":\"postal_code\",\"text\":\"1100-148\",\"bbox\":[170,325,385,390]},{\"kind\":\"label_field\",\"field\":\"destination_city\",\"text\":\"LISBOA\",\"bbox\":[390,355,535,405]},{\"kind\":\"label_field\",\"field\":\"tracking\",\"text\":\"TRK 7804-5815\",\"bbox\":[170,395,320,435]}]\t\t, \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 2838,
+ "tokens_in": 1141,
+ "tokens_out": 278
+}

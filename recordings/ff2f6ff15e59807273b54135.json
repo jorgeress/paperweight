@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Jonas Weber\", \"bbox\": [190, 250, 430, 300]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [190, 310, 400, 350]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75011\", \"bbox\": [190, 370, 320, 420]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Paris\", \"bbox\": [330, 370, 450, 420]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 4407-5460\", \"bbox\": [190, 430, 360, 470]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [190, 200, 290, 230]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SORTING UPDATE\", \"bbox\": [430, 580, 690, 630]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"PARIS parcels now\", \"bbox\": [430, 630, 700, 680]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"use bin C.\", \"bbox\": [430, 680, 590, 730]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular shipping label on brown parcel surface\", \"bbox\": [170, 170, 680, 520]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular sorting update sticker on brown parcel surface\", \"bbox\": [410, 540, 910, 780]}\n]}",
- "reasoning": "",
- "latency_ms": 1900,
- "tokens_in": 987,
- "tokens_out": 534
-}

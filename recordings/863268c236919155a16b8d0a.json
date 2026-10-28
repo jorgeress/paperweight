@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [70, 55, 915, 930]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [175, 275, 410, 325]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [175, 340, 360, 375]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75008\", \"bbox\": [175, 395, 305, 445]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PARIS\", \"bbox\": [315, 395, 440, 445]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"1541-1336\", \"bbox\": [205, 465, 335, 495]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [175, 230, 260, 260]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [175, 465, 205, 495]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 2679,
+ "tokens_in": 1141,
+ "tokens_out": 376
+}

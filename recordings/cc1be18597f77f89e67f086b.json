@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular parcel on a tray, intact\", \"bbox\": [148, 42, 858, 944]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"ADDRESS CORRECTION DO NOT SEND TO MADRID DESTINATION CHANGED TO PARIS\", \"bbox\": [232, 500, 432, 830]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [512, 512, 558, 540]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"ANA GARCIA\", \"bbox\": [512, 568, 620, 600]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"CALLE MAYOR 5\", \"bbox\": [512, 608, 642, 640]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [512, 648, 568, 680]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [512, 680, 580, 712]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRACKING TRK 4821-7739\", \"bbox\": [512, 720, 650, 752]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 5957,
+ "tokens_in": 1293,
+ "tokens_out": 415
+}

@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [145, 238, 388, 304]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Rue de Rivoli 44\", \"bbox\": [140, 298, 335, 356]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"50001\", \"bbox\": [135, 358, 265, 416]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"ZARAGOZA\", \"bbox\": [270, 382, 510, 440]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 1504-1497\", \"bbox\": [130, 422, 290, 468]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [140, 188, 235, 226]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel with white shipping label\", \"bbox\": [70, 95, 895, 935]}\n]}",
- "reasoning": "",
- "latency_ms": 1755,
- "tokens_in": 987,
- "tokens_out": 349
-}

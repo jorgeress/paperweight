@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"parcel, intact\", \"bbox\": [44, 100, 922, 899]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [148, 235, 384, 285]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [148, 300, 320, 340]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"69002\", \"bbox\": [148, 360, 260, 405]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LYON\", \"bbox\": [270, 360, 396, 405]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"5386-4175\", \"bbox\": [180, 425, 300, 455]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [148, 190, 240, 220]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [148, 425, 180, 455]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"Label is outdated. Customer moved to PARIS. Sort accordingly.\", \"bbox\": [456, 540, 844, 690]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4002,
+ "tokens_in": 1141,
+ "tokens_out": 430
+}

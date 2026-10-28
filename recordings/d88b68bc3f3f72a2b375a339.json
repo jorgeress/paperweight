@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [85, 62, 895, 930]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [195, 250, 440, 290]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Paseo del Prado 3\", \"bbox\": [195, 310, 420, 340]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"01310-100\", \"bbox\": [195, 370, 410, 410]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"S\u00e3o Paulo\", \"bbox\": [420, 370, 660, 410]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"4531-5341\", \"bbox\": [230, 435, 360, 460]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [195, 200, 280, 225]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [195, 435, 230, 460]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"KEEP DRY\", \"bbox\": [580, 210, 760, 260]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3549,
+ "tokens_in": 1141,
+ "tokens_out": 426
+}

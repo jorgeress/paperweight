@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular parcel, intact\", \"bbox\": [150, 30, 865, 950]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [580, 515, 635, 540]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"MARCO ROSSI\", \"bbox\": [580, 570, 695, 600]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"VIA DEL CORSO 210\", \"bbox\": [580, 610, 725, 640]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"00186\", \"bbox\": [580, 650, 630, 680]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"ROMA\", \"bbox\": [580, 690, 630, 720]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRACKING TRK 8147-9902\", \"bbox\": [580, 730, 715, 760]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3154,
+ "tokens_in": 1293,
+ "tokens_out": 347
+}

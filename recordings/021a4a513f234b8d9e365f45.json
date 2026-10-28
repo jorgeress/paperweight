@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"parcel, intact\", \"bbox\": [50, 50, 950, 900]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Jonas Weber\", \"bbox\": [190, 250, 430, 300]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [190, 310, 400, 350]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75011\", \"bbox\": [190, 370, 320, 420]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Paris\", \"bbox\": [330, 370, 450, 420]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 4407-5460\", \"bbox\": [190, 430, 360, 470]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [190, 200, 290, 230]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SORTING UPDATE\", \"bbox\": [430, 580, 700, 630]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"PARIS parcels now\", \"bbox\": [430, 630, 710, 680]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"use bin C.\", \"bbox\": [430, 690, 590, 730]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4001,
+ "tokens_in": 1141,
+ "tokens_out": 467
+}

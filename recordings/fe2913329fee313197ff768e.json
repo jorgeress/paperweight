@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [{\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [112, 268, 380, 322]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [112, 335, 355, 375]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75011\", \"bbox\": [112, 390, 275, 445]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Paris\", \"bbox\": [285, 390, 395, 445]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 1477-7007\", \"bbox\": [112, 460, 295, 495]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [512, 540, 755, 590]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Paseo del Prado 3\", \"bbox\": [512, 605, 755, 645]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"00000\", \"bbox\": [512, 660, 675, 710]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"M\u00c1LAGA\", \"bbox\": [685, 660, 850, 710]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 0000-0000\", \"bbox\": [512, 725, 695, 760]}, {\"kind\": \"object\", \"field\": null, \"text\": \"parcel with two shipping labels\", \"bbox\": [100, 180, 935, 805]}]}",
- "reasoning": "",
- "latency_ms": 2618,
- "tokens_in": 987,
- "tokens_out": 527
-}

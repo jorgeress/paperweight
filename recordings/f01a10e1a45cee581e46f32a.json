@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [58, 68, 912, 932]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Lucia Ortega\", \"bbox\": [172, 218, 404, 270]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [172, 286, 368, 322]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75008\", \"bbox\": [172, 338, 312, 382]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PARIS\", \"bbox\": [320, 338, 442, 382]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"7862-1000\", \"bbox\": [220, 402, 332, 432]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [172, 182, 252, 210]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"KEEP DRY\", \"bbox\": [628, 238, 782, 282]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3424,
+ "tokens_in": 1141,
+ "tokens_out": 380
+}

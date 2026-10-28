@@ -13,9 +13,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3234,
-   "tokens_in": 1457,
-   "tokens_out": 829,
+   "latency_ms": 9586,
+   "tokens_in": 1672,
+   "tokens_out": 1202,
    "rule": null,
    "error": null
   }
@@ -34,9 +34,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4496,
-   "tokens_in": 1447,
-   "tokens_out": 990,
+   "latency_ms": 9049,
+   "tokens_in": 1666,
+   "tokens_out": 883,
    "rule": null,
    "error": null
   }
@@ -55,9 +55,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4821,
-   "tokens_in": 1454,
-   "tokens_out": 1117,
+   "latency_ms": 9895,
+   "tokens_in": 1671,
+   "tokens_out": 1152,
    "rule": null,
    "error": null
   }
@@ -76,9 +76,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3902,
-   "tokens_in": 1450,
-   "tokens_out": 820,
+   "latency_ms": 8619,
+   "tokens_in": 1691,
+   "tokens_out": 999,
    "rule": null,
    "error": null
   }
@@ -97,9 +97,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3457,
-   "tokens_in": 1452,
-   "tokens_out": 774,
+   "latency_ms": 9107,
+   "tokens_in": 1669,
+   "tokens_out": 1118,
    "rule": null,
    "error": null
   }
@@ -118,9 +118,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3850,
-   "tokens_in": 1455,
-   "tokens_out": 691,
+   "latency_ms": 7893,
+   "tokens_in": 1672,
+   "tokens_out": 899,
    "rule": null,
    "error": null
   }
@@ -139,9 +139,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 3477,
-   "tokens_in": 1451,
-   "tokens_out": 638,
+   "latency_ms": 8006,
+   "tokens_in": 1665,
+   "tokens_out": 881,
    "rule": null,
    "error": null
   }
@@ -160,9 +160,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3752,
-   "tokens_in": 1452,
-   "tokens_out": 782,
+   "latency_ms": 7442,
+   "tokens_in": 1692,
+   "tokens_out": 897,
    "rule": null,
    "error": null
   }
@@ -181,9 +181,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3511,
-   "tokens_in": 1453,
-   "tokens_out": 767,
+   "latency_ms": 10954,
+   "tokens_in": 1670,
+   "tokens_out": 1049,
    "rule": null,
    "error": null
   }
@@ -202,9 +202,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 3881,
-   "tokens_in": 1448,
-   "tokens_out": 877,
+   "latency_ms": 9410,
+   "tokens_in": 1689,
+   "tokens_out": 940,
    "rule": null,
    "error": null
   }
@@ -223,9 +223,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3603,
-   "tokens_in": 1452,
-   "tokens_out": 872,
+   "latency_ms": 8302,
+   "tokens_in": 1692,
+   "tokens_out": 938,
    "rule": null,
    "error": null
   }
@@ -244,9 +244,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3910,
-   "tokens_in": 1451,
-   "tokens_out": 691,
+   "latency_ms": 7649,
+   "tokens_in": 1692,
+   "tokens_out": 1006,
    "rule": null,
    "error": null
   }
@@ -265,9 +265,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 4139,
-   "tokens_in": 1452,
-   "tokens_out": 899,
+   "latency_ms": 7870,
+   "tokens_in": 1666,
+   "tokens_out": 878,
    "rule": null,
    "error": null
   }
@@ -286,9 +286,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 5858,
-   "tokens_in": 1455,
-   "tokens_out": 962,
+   "latency_ms": 10517,
+   "tokens_in": 1669,
+   "tokens_out": 1075,
    "rule": null,
    "error": null
   }
@@ -307,9 +307,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 6050,
-   "tokens_in": 1449,
-   "tokens_out": 1054,
+   "latency_ms": 7417,
+   "tokens_in": 1663,
+   "tokens_out": 835,
    "rule": null,
    "error": null
   }
@@ -328,9 +328,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 4037,
-   "tokens_in": 1447,
-   "tokens_out": 811,
+   "latency_ms": 8564,
+   "tokens_in": 1664,
+   "tokens_out": 1024,
    "rule": null,
    "error": null
   }
@@ -349,9 +349,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3918,
-   "tokens_in": 1454,
-   "tokens_out": 853,
+   "latency_ms": 7403,
+   "tokens_in": 1695,
+   "tokens_out": 893,
    "rule": null,
    "error": null
   }
@@ -370,9 +370,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 2908,
-   "tokens_in": 1457,
-   "tokens_out": 688,
+   "latency_ms": 8356,
+   "tokens_in": 1697,
+   "tokens_out": 1006,
    "rule": null,
    "error": null
   }
@@ -391,9 +391,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4444,
-   "tokens_in": 1453,
-   "tokens_out": 973,
+   "latency_ms": 8176,
+   "tokens_in": 1694,
+   "tokens_out": 921,
    "rule": null,
    "error": null
   }
@@ -412,9 +412,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3121,
-   "tokens_in": 1455,
-   "tokens_out": 738,
+   "latency_ms": 13381,
+   "tokens_in": 1672,
+   "tokens_out": 949,
    "rule": null,
    "error": null
   }
@@ -433,9 +433,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 3630,
-   "tokens_in": 1451,
-   "tokens_out": 878,
+   "latency_ms": 8085,
+   "tokens_in": 1668,
+   "tokens_out": 922,
    "rule": null,
    "error": null
   }
@@ -454,9 +454,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3575,
-   "tokens_in": 1453,
-   "tokens_out": 902,
+   "latency_ms": 11742,
+   "tokens_in": 1693,
+   "tokens_out": 945,
    "rule": null,
    "error": null
   }
@@ -475,9 +475,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 3934,
-   "tokens_in": 1450,
-   "tokens_out": 948,
+   "latency_ms": 9024,
+   "tokens_in": 1664,
+   "tokens_out": 952,
    "rule": null,
    "error": null
   }
@@ -496,9 +496,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3495,
-   "tokens_in": 1453,
-   "tokens_out": 740,
+   "latency_ms": 9760,
+   "tokens_in": 1664,
+   "tokens_out": 1047,
    "rule": null,
    "error": null
   }
@@ -517,9 +517,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4402,
-   "tokens_in": 1448,
-   "tokens_out": 1037,
+   "latency_ms": 8861,
+   "tokens_in": 1662,
+   "tokens_out": 1027,
    "rule": null,
    "error": null
   }
@@ -538,9 +538,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4127,
-   "tokens_in": 1453,
-   "tokens_out": 834,
+   "latency_ms": 7034,
+   "tokens_in": 1693,
+   "tokens_out": 912,
    "rule": null,
    "error": null
   }
@@ -559,9 +559,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3918,
-   "tokens_in": 1449,
-   "tokens_out": 830,
+   "latency_ms": 7796,
+   "tokens_in": 1663,
+   "tokens_out": 887,
    "rule": null,
    "error": null
   }
@@ -580,9 +580,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 3665,
-   "tokens_in": 1450,
-   "tokens_out": 797,
+   "latency_ms": 8369,
+   "tokens_in": 1664,
+   "tokens_out": 1033,
    "rule": null,
    "error": null
   }
@@ -601,9 +601,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4123,
-   "tokens_in": 1455,
-   "tokens_out": 1025,
+   "latency_ms": 9810,
+   "tokens_in": 1696,
+   "tokens_out": 1065,
    "rule": null,
    "error": null
   }
@@ -622,9 +622,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3877,
-   "tokens_in": 1454,
-   "tokens_out": 808,
+   "latency_ms": 7324,
+   "tokens_in": 1671,
+   "tokens_out": 841,
    "rule": null,
    "error": null
   }
@@ -643,9 +643,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4105,
-   "tokens_in": 1483,
-   "tokens_out": 887,
+   "latency_ms": 8754,
+   "tokens_in": 1695,
+   "tokens_out": 1006,
    "rule": null,
    "error": null
   }
@@ -662,12 +662,12 @@
   },
   "run": {
    "commands": [
-    "HOLD"
+    "BIN C"
    ],
-   "latency_ms": 7380,
-   "tokens_in": 1459,
-   "tokens_out": 1885,
-   "rule": "scene-slot-domain",
+   "latency_ms": 7486,
+   "tokens_in": 1724,
+   "tokens_out": 972,
+   "rule": null,
    "error": null
   }
  },
@@ -685,9 +685,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5322,
-   "tokens_in": 1479,
-   "tokens_out": 1227,
+   "latency_ms": 9384,
+   "tokens_in": 1693,
+   "tokens_out": 1010,
    "rule": null,
    "error": null
   }
@@ -706,9 +706,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4064,
-   "tokens_in": 1485,
-   "tokens_out": 998,
+   "latency_ms": 9474,
+   "tokens_in": 1722,
+   "tokens_out": 1142,
    "rule": null,
    "error": null
   }
@@ -727,9 +727,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 4819,
-   "tokens_in": 1487,
-   "tokens_out": 1103,
+   "latency_ms": 8621,
+   "tokens_in": 1724,
+   "tokens_out": 917,
    "rule": null,
    "error": null
   }
@@ -748,9 +748,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4156,
-   "tokens_in": 1477,
-   "tokens_out": 1093,
+   "latency_ms": 8880,
+   "tokens_in": 1717,
+   "tokens_out": 1107,
    "rule": null,
    "error": null
   }
@@ -769,9 +769,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3666,
-   "tokens_in": 1479,
-   "tokens_out": 802,
+   "latency_ms": 8677,
+   "tokens_in": 1724,
+   "tokens_out": 1063,
    "rule": null,
    "error": null
   }
@@ -790,9 +790,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3685,
-   "tokens_in": 1487,
-   "tokens_out": 822,
+   "latency_ms": 7583,
+   "tokens_in": 1725,
+   "tokens_out": 1009,
    "rule": null,
    "error": null
   }
@@ -811,9 +811,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 4161,
-   "tokens_in": 1481,
-   "tokens_out": 931,
+   "latency_ms": 9882,
+   "tokens_in": 1717,
+   "tokens_out": 936,
    "rule": null,
    "error": null
   }
@@ -832,9 +832,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 3958,
-   "tokens_in": 1484,
-   "tokens_out": 967,
+   "latency_ms": 14052,
+   "tokens_in": 1697,
+   "tokens_out": 1248,
    "rule": null,
    "error": null
   }
@@ -853,9 +853,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 3179,
-   "tokens_in": 1483,
-   "tokens_out": 759,
+   "latency_ms": 7998,
+   "tokens_in": 1693,
+   "tokens_out": 889,
    "rule": null,
    "error": null
   }
@@ -874,9 +874,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3274,
-   "tokens_in": 1490,
-   "tokens_out": 858,
+   "latency_ms": 9639,
+   "tokens_in": 1727,
+   "tokens_out": 1117,
    "rule": null,
    "error": null
   }
@@ -895,9 +895,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3657,
-   "tokens_in": 1479,
-   "tokens_out": 902,
+   "latency_ms": 11887,
+   "tokens_in": 1703,
+   "tokens_out": 1009,
    "rule": null,
    "error": null
   }
@@ -916,9 +916,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4090,
-   "tokens_in": 1490,
-   "tokens_out": 989,
+   "latency_ms": 12530,
+   "tokens_in": 1726,
+   "tokens_out": 1131,
    "rule": null,
    "error": null
   }
@@ -937,9 +937,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 3741,
-   "tokens_in": 1479,
-   "tokens_out": 878,
+   "latency_ms": 10745,
+   "tokens_in": 1723,
+   "tokens_out": 1247,
    "rule": null,
    "error": null
   }
@@ -958,9 +958,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4866,
-   "tokens_in": 1510,
-   "tokens_out": 1111,
+   "latency_ms": 10051,
+   "tokens_in": 1720,
+   "tokens_out": 1162,
    "rule": null,
    "error": null
   }
@@ -979,9 +979,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3922,
-   "tokens_in": 1481,
-   "tokens_out": 815,
+   "latency_ms": 8715,
+   "tokens_in": 1719,
+   "tokens_out": 999,
    "rule": null,
    "error": null
   }
@@ -1000,9 +1000,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 3869,
-   "tokens_in": 1480,
-   "tokens_out": 946,
+   "latency_ms": 8392,
+   "tokens_in": 1693,
+   "tokens_out": 994,
    "rule": null,
    "error": null
   }
@@ -1021,9 +1021,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 3496,
-   "tokens_in": 1484,
-   "tokens_out": 826,
+   "latency_ms": 8201,
+   "tokens_in": 1696,
+   "tokens_out": 985,
    "rule": null,
    "error": null
   }
@@ -1042,9 +1042,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3912,
-   "tokens_in": 1487,
-   "tokens_out": 867,
+   "latency_ms": 8488,
+   "tokens_in": 1725,
+   "tokens_out": 1008,
    "rule": null,
    "error": null
   }
@@ -1063,9 +1063,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3728,
-   "tokens_in": 1455,
-   "tokens_out": 807,
+   "latency_ms": 8914,
+   "tokens_in": 1695,
+   "tokens_out": 1051,
    "rule": null,
    "error": null
   }
@@ -1084,9 +1084,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 3614,
-   "tokens_in": 1450,
-   "tokens_out": 668,
+   "latency_ms": 12343,
+   "tokens_in": 1690,
+   "tokens_out": 1190,
    "rule": null,
    "error": null
   }
@@ -1103,11 +1103,11 @@
   },
   "run": {
    "commands": [
-    "HOLD"
+    "BIN B"
    ],
-   "latency_ms": 9828,
-   "tokens_in": 1461,
-   "tokens_out": 2252,
+   "latency_ms": 8918,
+   "tokens_in": 1663,
+   "tokens_out": 1040,
    "rule": null,
    "error": null
   }
@@ -1124,11 +1124,11 @@
   },
   "run": {
    "commands": [
-    "HOLD"
+    "BIN C"
    ],
-   "latency_ms": 7885,
-   "tokens_in": 1460,
-   "tokens_out": 2007,
+   "latency_ms": 8719,
+   "tokens_in": 1664,
+   "tokens_out": 1022,
    "rule": null,
    "error": null
   }
@@ -1147,9 +1147,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 3613,
-   "tokens_in": 1452,
-   "tokens_out": 824,
+   "latency_ms": 10317,
+   "tokens_in": 1673,
+   "tokens_out": 1117,
    "rule": null,
    "error": null
   }
@@ -1168,9 +1168,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3450,
-   "tokens_in": 1454,
-   "tokens_out": 717,
+   "latency_ms": 9484,
+   "tokens_in": 1693,
+   "tokens_out": 1066,
    "rule": null,
    "error": null
   }
@@ -1189,9 +1189,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3554,
-   "tokens_in": 1450,
-   "tokens_out": 727,
+   "latency_ms": 9280,
+   "tokens_in": 1692,
+   "tokens_out": 900,
    "rule": null,
    "error": null
   }
@@ -1208,11 +1208,11 @@
   },
   "run": {
    "commands": [
-    "HOLD"
+    "BIN A"
    ],
-   "latency_ms": 7955,
-   "tokens_in": 1456,
-   "tokens_out": 1820,
+   "latency_ms": 8844,
+   "tokens_in": 1690,
+   "tokens_out": 1007,
    "rule": null,
    "error": null
   }
@@ -1229,11 +1229,11 @@
   },
   "run": {
    "commands": [
-    "HOLD"
+    "BIN C"
    ],
-   "latency_ms": 5711,
-   "tokens_in": 1456,
-   "tokens_out": 1222,
+   "latency_ms": 8184,
+   "tokens_in": 1688,
+   "tokens_out": 1011,
    "rule": null,
    "error": null
   }
@@ -1252,9 +1252,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4228,
-   "tokens_in": 1449,
-   "tokens_out": 976,
+   "latency_ms": 7795,
+   "tokens_in": 1667,
+   "tokens_out": 863,
    "rule": null,
    "error": null
   }
@@ -1273,9 +1273,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5863,
-   "tokens_in": 1546,
-   "tokens_out": 1506,
+   "latency_ms": 18400,
+   "tokens_in": 1764,
+   "tokens_out": 1476,
    "rule": null,
    "error": null
   }
@@ -1294,9 +1294,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 6961,
-   "tokens_in": 1576,
-   "tokens_out": 1709,
+   "latency_ms": 23378,
+   "tokens_in": 1787,
+   "tokens_out": 2060,
    "rule": null,
    "error": null
   }
@@ -1315,9 +1315,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5088,
-   "tokens_in": 1546,
-   "tokens_out": 1343,
+   "latency_ms": 12867,
+   "tokens_in": 1789,
+   "tokens_out": 1408,
    "rule": null,
    "error": null
   }
@@ -1336,9 +1336,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 6576,
-   "tokens_in": 1543,
-   "tokens_out": 1569,
+   "latency_ms": 18467,
+   "tokens_in": 1786,
+   "tokens_out": 1396,
    "rule": null,
    "error": null
   }
@@ -1357,9 +1357,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4945,
-   "tokens_in": 1586,
-   "tokens_out": 1239,
+   "latency_ms": 13369,
+   "tokens_in": 1793,
+   "tokens_out": 1583,
    "rule": null,
    "error": null
   }
@@ -1378,9 +1378,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 5206,
-   "tokens_in": 1572,
-   "tokens_out": 1266,
+   "latency_ms": 11157,
+   "tokens_in": 1753,
+   "tokens_out": 1292,
    "rule": null,
    "error": null
   }
@@ -1399,9 +1399,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 5560,
-   "tokens_in": 1540,
-   "tokens_out": 1537,
+   "latency_ms": 12101,
+   "tokens_in": 1758,
+   "tokens_out": 1269,
    "rule": null,
    "error": null
   }
@@ -1420,9 +1420,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5500,
-   "tokens_in": 1546,
-   "tokens_out": 1280,
+   "latency_ms": 17599,
+   "tokens_in": 1788,
+   "tokens_out": 1387,
    "rule": null,
    "error": null
   }
@@ -1441,9 +1441,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 4789,
-   "tokens_in": 1577,
-   "tokens_out": 1174,
+   "latency_ms": 16448,
+   "tokens_in": 1783,
+   "tokens_out": 1287,
    "rule": null,
    "error": null
   }
@@ -1462,9 +1462,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 5032,
-   "tokens_in": 1540,
-   "tokens_out": 1194,
+   "latency_ms": 11445,
+   "tokens_in": 1782,
+   "tokens_out": 1331,
    "rule": null,
    "error": null
   }
@@ -1483,9 +1483,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4331,
-   "tokens_in": 1495,
-   "tokens_out": 939,
+   "latency_ms": 9515,
+   "tokens_in": 1715,
+   "tokens_out": 1144,
    "rule": null,
    "error": null
   }
@@ -1504,9 +1504,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4757,
-   "tokens_in": 1503,
-   "tokens_out": 1212,
+   "latency_ms": 11325,
+   "tokens_in": 1742,
+   "tokens_out": 1192,
    "rule": null,
    "error": null
   }
@@ -1525,9 +1525,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5945,
-   "tokens_in": 1497,
-   "tokens_out": 1426,
+   "latency_ms": 11046,
+   "tokens_in": 1739,
+   "tokens_out": 1430,
    "rule": null,
    "error": null
   }
@@ -1546,9 +1546,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 3974,
-   "tokens_in": 1502,
-   "tokens_out": 927,
+   "latency_ms": 9971,
+   "tokens_in": 1746,
+   "tokens_out": 1226,
    "rule": null,
    "error": null
   }
@@ -1567,9 +1567,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 6020,
-   "tokens_in": 1498,
-   "tokens_out": 1250,
+   "latency_ms": 10924,
+   "tokens_in": 1739,
+   "tokens_out": 1228,
    "rule": null,
    "error": null
   }
@@ -1588,9 +1588,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 6653,
-   "tokens_in": 1541,
-   "tokens_out": 1751,
+   "latency_ms": 13311,
+   "tokens_in": 1783,
+   "tokens_out": 1623,
    "rule": null,
    "error": null
   }
@@ -1609,9 +1609,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5319,
-   "tokens_in": 1543,
-   "tokens_out": 1304,
+   "latency_ms": 15410,
+   "tokens_in": 1785,
+   "tokens_out": 1835,
    "rule": null,
    "error": null
   }
@@ -1630,9 +1630,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5971,
-   "tokens_in": 1542,
-   "tokens_out": 1633,
+   "latency_ms": 11087,
+   "tokens_in": 1785,
+   "tokens_out": 1472,
    "rule": null,
    "error": null
   }
@@ -1651,9 +1651,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5461,
-   "tokens_in": 1546,
-   "tokens_out": 1288,
+   "latency_ms": 9969,
+   "tokens_in": 1788,
+   "tokens_out": 1295,
    "rule": null,
    "error": null
   }
@@ -1672,9 +1672,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5031,
-   "tokens_in": 1547,
-   "tokens_out": 1218,
+   "latency_ms": 12096,
+   "tokens_in": 1790,
+   "tokens_out": 1313,
    "rule": null,
    "error": null
   }
@@ -1693,9 +1693,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5969,
-   "tokens_in": 1560,
-   "tokens_out": 1428,
+   "latency_ms": 12582,
+   "tokens_in": 1795,
+   "tokens_out": 1580,
    "rule": null,
    "error": null
   }
@@ -1714,9 +1714,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 6235,
-   "tokens_in": 1586,
-   "tokens_out": 1457,
+   "latency_ms": 12776,
+   "tokens_in": 1799,
+   "tokens_out": 1375,
    "rule": null,
    "error": null
   }
@@ -1735,9 +1735,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5208,
-   "tokens_in": 1549,
-   "tokens_out": 1259,
+   "latency_ms": 14018,
+   "tokens_in": 1790,
+   "tokens_out": 1747,
    "rule": null,
    "error": null
   }
@@ -1756,9 +1756,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 6755,
-   "tokens_in": 1552,
-   "tokens_out": 1836,
+   "latency_ms": 15897,
+   "tokens_in": 1793,
+   "tokens_out": 1610,
    "rule": null,
    "error": null
   }
@@ -1777,9 +1777,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 7782,
-   "tokens_in": 1555,
-   "tokens_out": 1932,
+   "latency_ms": 14513,
+   "tokens_in": 1798,
+   "tokens_out": 1662,
    "rule": null,
    "error": null
   }
@@ -1798,9 +1798,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5685,
-   "tokens_in": 1582,
-   "tokens_out": 1334,
+   "latency_ms": 12284,
+   "tokens_in": 1794,
+   "tokens_out": 1338,
    "rule": null,
    "error": null
   }
@@ -1819,9 +1819,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 5506,
-   "tokens_in": 1545,
-   "tokens_out": 1346,
+   "latency_ms": 14813,
+   "tokens_in": 1789,
+   "tokens_out": 1535,
    "rule": null,
    "error": null
   }
@@ -1840,9 +1840,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 4680,
-   "tokens_in": 1545,
-   "tokens_out": 1217,
+   "latency_ms": 14307,
+   "tokens_in": 1788,
+   "tokens_out": 1597,
    "rule": null,
    "error": null
   }
@@ -1861,9 +1861,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 6169,
-   "tokens_in": 1547,
-   "tokens_out": 1415,
+   "latency_ms": 17688,
+   "tokens_in": 1790,
+   "tokens_out": 1876,
    "rule": null,
    "error": null
   }
@@ -1882,9 +1882,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 5800,
-   "tokens_in": 1581,
-   "tokens_out": 1595,
+   "latency_ms": 12345,
+   "tokens_in": 1790,
+   "tokens_out": 1530,
    "rule": null,
    "error": null
   }
@@ -1903,9 +1903,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5146,
-   "tokens_in": 1585,
-   "tokens_out": 1277,
+   "latency_ms": 19725,
+   "tokens_in": 1820,
+   "tokens_out": 2396,
    "rule": null,
    "error": null
   }
@@ -1924,9 +1924,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5681,
-   "tokens_in": 1545,
-   "tokens_out": 1234,
+   "latency_ms": 12115,
+   "tokens_in": 1763,
+   "tokens_out": 1466,
    "rule": null,
    "error": null
   }
@@ -1945,9 +1945,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 6856,
-   "tokens_in": 1549,
-   "tokens_out": 1687,
+   "latency_ms": 13103,
+   "tokens_in": 1792,
+   "tokens_out": 1573,
    "rule": null,
    "error": null
   }
@@ -1966,9 +1966,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 6575,
-   "tokens_in": 1552,
-   "tokens_out": 1708,
+   "latency_ms": 15125,
+   "tokens_in": 1790,
+   "tokens_out": 1748,
    "rule": null,
    "error": null
   }
@@ -1987,9 +1987,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5954,
-   "tokens_in": 1546,
-   "tokens_out": 1444,
+   "latency_ms": 19274,
+   "tokens_in": 1788,
+   "tokens_out": 2296,
    "rule": null,
    "error": null
   }
@@ -2008,9 +2008,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4642,
-   "tokens_in": 1461,
-   "tokens_out": 1038,
+   "latency_ms": 11347,
+   "tokens_in": 1729,
+   "tokens_out": 1383,
    "rule": null,
    "error": null
   }
@@ -2029,9 +2029,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5498,
-   "tokens_in": 1490,
-   "tokens_out": 1329,
+   "latency_ms": 13239,
+   "tokens_in": 1730,
+   "tokens_out": 1556,
    "rule": null,
    "error": null
   }
@@ -2050,9 +2050,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 6885,
-   "tokens_in": 1494,
-   "tokens_out": 1562,
+   "latency_ms": 14613,
+   "tokens_in": 1735,
+   "tokens_out": 1645,
    "rule": null,
    "error": null
   }
@@ -2071,9 +2071,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5533,
-   "tokens_in": 1500,
-   "tokens_out": 1528,
+   "latency_ms": 15805,
+   "tokens_in": 1735,
+   "tokens_out": 1864,
    "rule": null,
    "error": null
   }
@@ -2092,9 +2092,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5702,
-   "tokens_in": 1488,
-   "tokens_out": 1330,
+   "latency_ms": 12201,
+   "tokens_in": 1730,
+   "tokens_out": 1475,
    "rule": null,
    "error": null
   }
@@ -2113,9 +2113,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 6136,
-   "tokens_in": 1552,
-   "tokens_out": 1642,
+   "latency_ms": 16038,
+   "tokens_in": 1795,
+   "tokens_out": 1815,
    "rule": null,
    "error": null
   }
@@ -2134,9 +2134,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 7913,
-   "tokens_in": 1549,
-   "tokens_out": 1921,
+   "latency_ms": 14415,
+   "tokens_in": 1791,
+   "tokens_out": 1770,
    "rule": null,
    "error": null
   }
@@ -2155,9 +2155,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 6849,
-   "tokens_in": 1553,
-   "tokens_out": 1724,
+   "latency_ms": 14993,
+   "tokens_in": 1793,
+   "tokens_out": 1763,
    "rule": null,
    "error": null
   }
@@ -2176,9 +2176,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 7118,
-   "tokens_in": 1552,
-   "tokens_out": 1874,
+   "latency_ms": 13853,
+   "tokens_in": 1795,
+   "tokens_out": 1638,
    "rule": null,
    "error": null
   }
@@ -2197,9 +2197,9 @@
    "commands": [
     "BIN A"
    ],
-   "latency_ms": 9287,
-   "tokens_in": 1548,
-   "tokens_out": 2394,
+   "latency_ms": 14778,
+   "tokens_in": 1790,
+   "tokens_out": 1634,
    "rule": null,
    "error": null
   }
@@ -2218,9 +2218,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5813,
-   "tokens_in": 1545,
-   "tokens_out": 1372,
+   "latency_ms": 11932,
+   "tokens_in": 1763,
+   "tokens_out": 1409,
    "rule": null,
    "error": null
   }
@@ -2239,9 +2239,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5370,
-   "tokens_in": 1547,
-   "tokens_out": 1245,
+   "latency_ms": 15960,
+   "tokens_in": 1790,
+   "tokens_out": 1492,
    "rule": null,
    "error": null
   }
@@ -2260,9 +2260,9 @@
    "commands": [
     "BIN B"
    ],
-   "latency_ms": 7443,
-   "tokens_in": 1543,
-   "tokens_out": 1864,
+   "latency_ms": 24034,
+   "tokens_in": 1782,
+   "tokens_out": 2309,
    "rule": null,
    "error": null
   }
@@ -2281,9 +2281,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 4669,
-   "tokens_in": 1545,
-   "tokens_out": 1211,
+   "latency_ms": 11547,
+   "tokens_in": 1788,
+   "tokens_out": 1343,
    "rule": null,
    "error": null
   }
@@ -2302,9 +2302,9 @@
    "commands": [
     "BIN C"
    ],
-   "latency_ms": 5310,
-   "tokens_in": 1544,
-   "tokens_out": 1346,
+   "latency_ms": 10955,
+   "tokens_in": 1761,
+   "tokens_out": 1265,
    "rule": null,
    "error": null
   }
@@ -2323,9 +2323,9 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 7738,
-   "tokens_in": 1589,
-   "tokens_out": 1978,
+   "latency_ms": 23196,
+   "tokens_in": 1857,
+   "tokens_out": 2160,
    "rule": null,
    "error": null
   }
@@ -2344,11 +2344,11 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 2493,
-   "tokens_in": 987,
-   "tokens_out": 571,
-   "rule": null,
-   "error": "token factory: nvidia/Nemotron-3.5-Super-VL hit max_tokens"
+   "latency_ms": 23258,
+   "tokens_in": 1892,
+   "tokens_out": 2733,
+   "rule": "slot-conflict",
+   "error": null
   }
  },
  {
@@ -2365,11 +2365,11 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 2576,
-   "tokens_in": 987,
-   "tokens_out": 539,
+   "latency_ms": 15123,
+   "tokens_in": 1864,
+   "tokens_out": 1973,
    "rule": null,
-   "error": "token factory: nvidia/Nemotron-3.5-Super-VL hit max_tokens"
+   "error": null
   }
  },
  {
@@ -2386,9 +2386,9 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 8579,
-   "tokens_in": 1624,
-   "tokens_out": 2503,
+   "latency_ms": 51465,
+   "tokens_in": 1950,
+   "tokens_out": 3811,
    "rule": null,
    "error": null
   }
@@ -2407,9 +2407,9 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 8923,
-   "tokens_in": 1624,
-   "tokens_out": 2262,
+   "latency_ms": 20743,
+   "tokens_in": 1863,
+   "tokens_out": 2383,
    "rule": null,
    "error": null
   }
@@ -2428,9 +2428,9 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 9955,
-   "tokens_in": 1617,
-   "tokens_out": 2860,
+   "latency_ms": 32740,
+   "tokens_in": 1914,
+   "tokens_out": 3091,
    "rule": null,
    "error": null
   }
@@ -2449,9 +2449,9 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 6775,
-   "tokens_in": 1584,
-   "tokens_out": 1608,
+   "latency_ms": 30185,
+   "tokens_in": 1856,
+   "tokens_out": 2953,
    "rule": null,
    "error": null
   }
@@ -2470,9 +2470,9 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 7452,
-   "tokens_in": 1584,
-   "tokens_out": 1874,
+   "latency_ms": 19169,
+   "tokens_in": 1859,
+   "tokens_out": 1648,
    "rule": null,
    "error": null
   }
@@ -2491,9 +2491,9 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 7748,
-   "tokens_in": 1592,
-   "tokens_out": 1950,
+   "latency_ms": 16397,
+   "tokens_in": 1924,
+   "tokens_out": 2262,
    "rule": null,
    "error": null
   }
@@ -2512,9 +2512,9 @@
    "commands": [
     "HOLD"
    ],
-   "latency_ms": 7702,
-   "tokens_in": 1591,
-   "tokens_out": 1815,
+   "latency_ms": 22661,
+   "tokens_in": 1859,
+   "tokens_out": 2895,
    "rule": null,
    "error": null
   }

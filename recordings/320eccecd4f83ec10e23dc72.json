@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [45, 58, 912, 895]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [195, 216, 280, 244]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Lucia Ortega\", \"bbox\": [195, 264, 430, 308]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Paseo del Prado 3\", \"bbox\": [195, 328, 425, 360]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75011\", \"bbox\": [195, 380, 320, 424]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Paris\", \"bbox\": [330, 380, 445, 424]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"8242-8892\", \"bbox\": [225, 452, 355, 480]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 2863,
+ "tokens_in": 1141,
+ "tokens_out": 336
+}

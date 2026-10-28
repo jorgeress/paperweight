@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular parcel with a shipping label, intact\", \"bbox\": [150, 30, 868, 945]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [300, 520, 350, 545]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"KLARA WEBER\", \"bbox\": [300, 570, 420, 600]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"TORSTRASSE 88\", \"bbox\": [300, 605, 420, 635]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"10119\", \"bbox\": [300, 640, 350, 670]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"BERLIN\", \"bbox\": [300, 675, 360, 705]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRACKING TRK 7290-3358\", \"bbox\": [300, 725, 430, 750]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3311,
+ "tokens_in": 1293,
+ "tokens_out": 351
+}

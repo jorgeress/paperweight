@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"cardboard parcel, intact\", \"bbox\": [40, 75, 895, 940]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [205, 265, 445, 310]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [205, 330, 400, 365]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75008\", \"bbox\": [205, 385, 340, 430]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PARIS\", \"bbox\": [350, 385, 475, 430]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"3804-2492\", \"bbox\": [245, 450, 370, 480]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [205, 220, 290, 250]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [205, 450, 240, 480]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"FRAGILE\", \"bbox\": [590, 150, 895, 270]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3711,
+ "tokens_in": 1141,
+ "tokens_out": 418
+}

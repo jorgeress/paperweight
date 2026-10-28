@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [89, 66, 909, 933]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [185, 272, 420, 317]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [185, 338, 370, 374]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"50001\", \"bbox\": [185, 394, 310, 440]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"ZARAGOZA\", \"bbox\": [320, 394, 565, 440]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"9950-3510\", \"bbox\": [215, 461, 350, 490]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [185, 228, 275, 255]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [185, 461, 215, 490]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"ADDRESS CORRECTION\", \"bbox\": [455, 604, 785, 645]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"Do not send to ZARAGOZA.\", \"bbox\": [455, 658, 835, 698]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"Destination changed to MADRID\", \"bbox\": [455, 711, 910, 751]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4866,
+ "tokens_in": 1141,
+ "tokens_out": 520
+}

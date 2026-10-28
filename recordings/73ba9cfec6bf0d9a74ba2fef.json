@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [68, 70, 932, 900]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [204, 260, 444, 310]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [204, 325, 392, 360]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"69002\", \"bbox\": [204, 380, 344, 425]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LYON\", \"bbox\": [352, 380, 460, 425]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 4639-9460\", \"bbox\": [204, 440, 368, 475]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [204, 210, 296, 240]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"ADDRESS CORRECTION\", \"bbox\": [468, 585, 796, 645]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"Do not send to LYON.\", \"bbox\": [468, 645, 776, 695]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"Destination changed to MADRID\", \"bbox\": [468, 675, 932, 760]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4017,
+ "tokens_in": 1141,
+ "tokens_out": 477
+}

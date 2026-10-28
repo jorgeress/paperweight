@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [180, 240, 410, 280]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [180, 300, 360, 335]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75008\", \"bbox\": [180, 355, 310, 400]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PARIS\", \"bbox\": [320, 355, 440, 400]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 7227-3378\", \"bbox\": [180, 420, 330, 450]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [180, 195, 265, 220]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"parcel with shipping label, brown cardboard surface, dark circular stain bottom right, small dark marks top right\", \"bbox\": [70, 50, 940, 930]}\n]}",
- "reasoning": "",
- "latency_ms": 2040,
- "tokens_in": 987,
- "tokens_out": 356
-}

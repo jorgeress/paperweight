@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"parcel with two shipping labels, intact\", \"bbox\": [180, 118, 920, 798]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Lucia Ortega\", \"bbox\": [218, 200, 448, 262]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [218, 262, 402, 310]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75011\", \"bbox\": [218, 318, 350, 370]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Paris\", \"bbox\": [360, 330, 462, 382]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"8996-7819\", \"bbox\": [242, 388, 362, 422]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [218, 150, 302, 188]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [512, 530, 758, 582]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Paseo del Prado 3\", \"bbox\": [512, 592, 732, 632]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"00000\", \"bbox\": [512, 650, 662, 702]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"BERLIN\", \"bbox\": [672, 658, 812, 702]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"0000-0000\", \"bbox\": [536, 712, 672, 742]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [512, 488, 602, 522]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 5205,
+ "tokens_in": 1141,
+ "tokens_out": 617
+}

@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular parcel with shipping label, intact\", \"bbox\": [150, 30, 865, 945]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"JOAO SILVA\", \"bbox\": [340, 480, 370, 640]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"RUA AUGUSTA 120\", \"bbox\": [320, 480, 350, 720]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"1100-053\", \"bbox\": [300, 480, 325, 590]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LISBOA\", \"bbox\": [290, 480, 310, 580]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRACKING TK 6012 4471\", \"bbox\": [270, 480, 290, 710]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [380, 480, 400, 560]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3632,
+ "tokens_in": 1293,
+ "tokens_out": 354
+}

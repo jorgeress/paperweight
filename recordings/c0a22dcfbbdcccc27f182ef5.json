@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [88, 64, 882, 940]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [192, 208, 280, 244]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [192, 248, 432, 300]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Rue de Rivoli 44\", \"bbox\": [192, 312, 408, 356]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [192, 364, 344, 420]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [352, 348, 528, 404]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"2631-3338\", \"bbox\": [248, 436, 376, 472]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 2670,
+ "tokens_in": 1141,
+ "tokens_out": 341
+}

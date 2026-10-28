@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [44, 90, 882, 918]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [198, 174, 284, 204]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [198, 212, 434, 260]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [198, 276, 440, 314]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"50001\", \"bbox\": [198, 330, 326, 378]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"ZARAGOZA\", \"bbox\": [338, 328, 592, 376]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 2484-9907\", \"bbox\": [198, 396, 366, 430]}] , \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3085,
+ "tokens_in": 1141,
+ "tokens_out": 345
+}

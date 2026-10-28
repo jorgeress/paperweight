@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"cardboard parcel, intact\", \"bbox\": [50, 65, 955, 940]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [205, 250, 435, 305]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [205, 320, 400, 360]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"1100-148\", \"bbox\": [205, 370, 440, 425]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LISBOA\", \"bbox\": [450, 360, 590, 410]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"8380-9701\", \"bbox\": [245, 440, 385, 475]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [205, 210, 290, 240]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [205, 440, 240, 470]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3239,
+ "tokens_in": 1141,
+ "tokens_out": 380
+}

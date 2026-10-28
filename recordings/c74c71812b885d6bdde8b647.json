@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular parcel, intact\", \"bbox\": [150, 35, 865, 950]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"ANA GARCIA\", \"bbox\": [245, 575, 350, 605]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"CALLE MAYOR 5\", \"bbox\": [245, 610, 365, 640]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [245, 645, 290, 675]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [245, 680, 305, 710]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 4621-7730\", \"bbox\": [245, 730, 365, 755]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [250, 525, 295, 545]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRACKING\", \"bbox\": [245, 730, 295, 750]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"FRAGILE\", \"bbox\": [465, 595, 535, 625]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"HANDLE WITH CARE\", \"bbox\": [465, 640, 635, 670]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"THIS SIDE UP\", \"bbox\": [465, 685, 575, 715]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4574,
+ "tokens_in": 1293,
+ "tokens_out": 522
+}

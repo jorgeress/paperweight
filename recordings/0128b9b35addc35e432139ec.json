@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [85, 85, 935, 950]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [145, 180, 240, 220]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [145, 225, 370, 290]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [145, 290, 325, 340]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"14001\", \"bbox\": [145, 350, 250, 405]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"C\u00f3rdoba\", \"bbox\": [260, 365, 455, 425]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"6894-6808\", \"bbox\": [175, 415, 290, 455]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3330,
+ "tokens_in": 1141,
+ "tokens_out": 335
+}

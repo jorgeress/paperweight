@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"parcel, intact\", \"bbox\": [47, 97, 882, 951]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [187, 180, 280, 210]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [187, 218, 422, 267]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Rue de Rivoli 44\", \"bbox\": [187, 282, 397, 317]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"4000-322\", \"bbox\": [187, 332, 387, 387]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PORTO\", \"bbox\": [397, 332, 555, 387]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 8085-9913\", \"bbox\": [187, 407, 355, 437]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 2861,
+ "tokens_in": 1141,
+ "tokens_out": 344
+}

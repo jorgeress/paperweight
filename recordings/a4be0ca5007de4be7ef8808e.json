@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"parcel, intact\", \"bbox\": [88, 62, 928, 948]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [132, 270, 380, 320]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [132, 335, 355, 375]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"75011\", \"bbox\": [132, 390, 275, 440]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Paris\", \"bbox\": [285, 390, 390, 440]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"1477-7007\", \"bbox\": [175, 460, 300, 490]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [132, 225, 225, 255]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [525, 540, 755, 585]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Paseo del Prado 3\", \"bbox\": [525, 600, 745, 635]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"00000\", \"bbox\": [525, 655, 675, 705]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"M\u00c1LAGA\", \"bbox\": [685, 655, 850, 705]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"0000-0000\", \"bbox\": [565, 725, 690, 755]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [515, 495, 610, 525]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4807,
+ "tokens_in": 1141,
+ "tokens_out": 612
+}

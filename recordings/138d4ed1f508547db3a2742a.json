@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [\n  {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [145, 265, 395, 330]},\n  {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [145, 330, 375, 380]},\n  {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"29001\", \"bbox\": [145, 385, 285, 440]},\n  {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"M\u00e1laga\", \"bbox\": [290, 395, 440, 455]},\n  {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 3580-6008\", \"bbox\": [145, 450, 300, 490]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [145, 215, 240, 250]},\n  {\"kind\": \"free_text\", \"field\": null, \"text\": \"KEEP DRY\", \"bbox\": [575, 175, 740, 225]},\n  {\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular shipping label on a brown parcel\", \"bbox\": [115, 180, 625, 570]}\n]}",
- "reasoning": "",
- "latency_ms": 2160,
- "tokens_in": 987,
- "tokens_out": 393
-}

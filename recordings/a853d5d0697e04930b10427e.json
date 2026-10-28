@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [\n{\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [190, 240, 430, 290]},\n{\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [190, 300, 390, 350]},\n{\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28045\", \"bbox\": [190, 360, 340, 410]},\n{\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Madrid\", \"bbox\": [350, 360, 500, 410]},\n{\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 8151-6070\", \"bbox\": [190, 420, 370, 470]},\n{\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [510, 570, 760, 620]},\n{\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Rue de Rivoli 44\", \"bbox\": [510, 630, 720, 680]},\n{\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"00000\", \"bbox\": [510, 690, 680, 740]},\n{\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"BERLIN\", \"bbox\": [690, 690, 830, 740]},\n{\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 0000-0000\", \"bbox\": [510, 750, 690, 800]},\n{\"kind\": \"object\", \"field\": null, \"text\": \"parcel with two shipping labels on a brown tray\", \"bbox\": [170, 140, 930, 840]}\n]}",
- "reasoning": "",
- "latency_ms": 2208,
- "tokens_in": 987,
- "tokens_out": 542
-}

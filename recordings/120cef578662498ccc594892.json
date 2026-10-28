@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"parcel, intact\", \"bbox\": [40, 100, 940, 890]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Nadia Benali\", \"bbox\": [200, 250, 430, 290]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [200, 310, 390, 350]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28045\", \"bbox\": [200, 370, 330, 410]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Madrid\", \"bbox\": [340, 360, 500, 410]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"8151-6070\", \"bbox\": [240, 430, 370, 460]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [200, 210, 280, 230]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [520, 580, 760, 620]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Rue de Rivoli 44\", \"bbox\": [520, 640, 720, 670]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"00000\", \"bbox\": [520, 690, 660, 740]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"BERLIN\", \"bbox\": [670, 690, 830, 740]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"0000-0000\", \"bbox\": [560, 760, 690, 790]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [520, 530, 600, 550]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4550,
+ "tokens_in": 1141,
+ "tokens_out": 614
+}

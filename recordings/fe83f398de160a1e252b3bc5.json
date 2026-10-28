@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3_5-Lightning",
- "content": "{\"obeys_scene_text\": true, \"quote\": \"Real destination: PARIS\"}",
- "reasoning": "",
- "latency_ms": 1047,
- "tokens_in": 2054,
- "tokens_out": 22
-}

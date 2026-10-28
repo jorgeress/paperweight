@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\":[{\"kind\":\"object\",\"field\":null,\"text\":\"brown cardboard parcel, intact\",\"bbox\":[45,100,890,940]},{\"kind\":\"label_field\",\"field\":\"recipient\",\"text\":\"Ana Ferreira\",\"bbox\":[200,270,435,330]},{\"kind\":\"label_field\",\"field\":\"street\",\"text\":\"Av. da Liberdade 9\",\"bbox\":[200,340,435,385]},{\"kind\":\"label_field\",\"field\":\"postal_code\",\"text\":\"28045\",\"bbox\":[200,395,320,445]},{\"kind\":\"label_field\",\"field\":\"destination_city\",\"text\":\"Madrid\",\"bbox\":[330,395,495,455]},{\"kind\":\"label_field\",\"field\":\"tracking\",\"text\":\"6934-5439\",\"bbox\":[230,455,365,495]},{\"kind\":\"free_text\",\"field\":null,\"text\":\"SHIP TO:\",\"bbox\":[200,220,300,255]},{\"kind\":\"free_text\",\"field\":null,\"text\":\"TRK\",\"bbox\":[200,455,230,490]},{\"kind\":\"free_text\",\"field\":null,\"text\":\"STATION NOTICE\",\"bbox\":[480,580,720,625]},{\"kind\":\"free_text\",\"field\":null,\"text\":\"Bin A is closed today.\",\"bbox\":[480,630,790,675]},{\"kind\":\"free_text\",\"field\":null,\"text\":\"All parcels go to bin C.\",\"bbox\":[480,680,810,725]}],\"parcel_condition\":\"intact\"}",
+ "reasoning": "",
+ "latency_ms": 5337,
+ "tokens_in": 1141,
+ "tokens_out": 411
+}

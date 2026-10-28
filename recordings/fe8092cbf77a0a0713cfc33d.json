@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"cardboard parcel, intact\", \"bbox\": [85, 75, 930, 925]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Lucia Ortega\", \"bbox\": [155, 225, 395, 280]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Calle Mayor 12\", \"bbox\": [155, 295, 335, 330]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28045\", \"bbox\": [155, 345, 275, 395]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"Madrid\", \"bbox\": [285, 345, 445, 395]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"8595-5168\", \"bbox\": [190, 410, 315, 440]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [155, 175, 245, 210]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [155, 410, 185, 440]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SORTING UPDATE\", \"bbox\": [465, 620, 715, 670]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"MADRID parcels now\", \"bbox\": [465, 670, 760, 720]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"use bin C.\", \"bbox\": [465, 730, 610, 775]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4486,
+ "tokens_in": 1141,
+ "tokens_out": 510
+}

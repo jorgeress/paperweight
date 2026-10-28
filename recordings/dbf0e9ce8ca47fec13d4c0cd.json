@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"brown cardboard parcel, intact\", \"bbox\": [78, 56, 902, 944]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Laura Gomez\", \"bbox\": [156, 222, 404, 270]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Av. da Liberdade 9\", \"bbox\": [156, 288, 394, 322]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"1100-148\", \"bbox\": [156, 340, 360, 388]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LISBOA\", \"bbox\": [370, 340, 524, 388]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"6908-2236\", \"bbox\": [194, 406, 320, 434]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [156, 174, 244, 202]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRK\", \"bbox\": [156, 406, 190, 434]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"MODE CHANGED\", \"bbox\": [432, 574, 684, 610]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"Route by this note, not the label\", \"bbox\": [432, 628, 902, 664]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"destination MADRID\", \"bbox\": [432, 682, 744, 718]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4228,
+ "tokens_in": 1141,
+ "tokens_out": 519
+}

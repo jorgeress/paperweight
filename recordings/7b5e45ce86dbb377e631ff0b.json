@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white parcel in a tray, intact\", \"bbox\": [148, 42, 856, 944]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"ANA GARCIA\", \"bbox\": [326, 488, 360, 644]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"CALLE MAYOR 5\", \"bbox\": [310, 488, 342, 694]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"28013\", \"bbox\": [294, 488, 324, 564]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"MADRID\", \"bbox\": [278, 488, 308, 594]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TH00011 THK 4821 7738\", \"bbox\": [250, 488, 278, 694]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [374, 488, 390, 564]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"ADDRESS CORRECTION\", \"bbox\": [564, 544, 676, 604]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"DO NOT SEND TO MADRID\", \"bbox\": [564, 624, 704, 694]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"DESTINATION CHANGED TO PARIS\", \"bbox\": [564, 704, 734, 774]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4302,
+ "tokens_in": 1293,
+ "tokens_out": 498
+}

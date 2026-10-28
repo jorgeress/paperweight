@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular parcel with shipping label, intact\", \"bbox\": [115, 45, 815, 945]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"LUCIA PEREZ\", \"bbox\": [205, 585, 295, 620]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"CALLE ALFONSO I 14\", \"bbox\": [205, 625, 350, 655]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"50001\", \"bbox\": [205, 660, 255, 690]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"ZARAGOZA\", \"bbox\": [260, 660, 325, 690]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 9364 2215\", \"bbox\": [245, 720, 320, 745]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO\", \"bbox\": [210, 525, 250, 545]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"TRACKING\", \"bbox\": [205, 720, 245, 740]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"benq\", \"bbox\": [865, 0, 920, 35]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 4136,
+ "tokens_in": 1293,
+ "tokens_out": 435
+}

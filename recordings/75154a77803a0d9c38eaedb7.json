@@ -1,8 +1,0 @@
-{
- "model": "nvidia/Nemotron-3.5-Super-VL",
- "content": "{\"observations\": [{\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Ana Ferreira\", \"bbox\": [172, 240, 400, 295]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [168, 298, 365, 345]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"50001\", \"bbox\": [165, 365, 285, 410]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"ZARAGOZA\", \"bbox\": [290, 375, 545, 425]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 9440-4757\", \"bbox\": [162, 425, 325, 465]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Pierre Martin\", \"bbox\": [500, 555, 745, 610]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Rue de Rivoli 44\", \"bbox\": [495, 615, 705, 660]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"00000\", \"bbox\": [492, 675, 620, 720]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"PARIS\", \"bbox\": [625, 685, 770, 730]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 0000-0000\", \"bbox\": [490, 735, 660, 775]}, {\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular shipping label with black text, top left\", \"bbox\": [140, 155, 655, 505]}, {\"kind\": \"object\", \"field\": null, \"text\": \"white rectangular shipping label with black text, bottom right\", \"bbox\": [465, 485, 905, 825]}]}",
- "reasoning": "",
- "latency_ms": 2659,
- "tokens_in": 987,
- "tokens_out": 583
-}

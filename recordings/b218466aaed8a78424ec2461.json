@@ -1,0 +1,8 @@
+{
+ "model": "nvidia/Nemotron-3.5-Super-VL",
+ "content": "{\"observations\": [{\"kind\": \"object\", \"field\": null, \"text\": \"cardboard parcel with white shipping label and yellow sticker, intact\", \"bbox\": [108, 150, 930, 490]}, {\"kind\": \"label_field\", \"field\": \"recipient\", \"text\": \"Jonas Weber\", \"bbox\": [135, 230, 365, 280]}, {\"kind\": \"label_field\", \"field\": \"street\", \"text\": \"Hauptstrasse 7\", \"bbox\": [135, 295, 320, 330]}, {\"kind\": \"label_field\", \"field\": \"postal_code\", \"text\": \"69002\", \"bbox\": [135, 350, 260, 400]}, {\"kind\": \"label_field\", \"field\": \"destination_city\", \"text\": \"LYON\", \"bbox\": [270, 350, 390, 400]}, {\"kind\": \"label_field\", \"field\": \"tracking\", \"text\": \"TRK 6950-4939\", \"bbox\": [135, 415, 295, 445]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"SHIP TO:\", \"bbox\": [135, 190, 225, 220]}, {\"kind\": \"free_text\", \"field\": null, \"text\": \"THIS SIDE UP\", \"bbox\": [630, 215, 850, 270]}], \"parcel_condition\": \"intact\"}",
+ "reasoning": "",
+ "latency_ms": 3595,
+ "tokens_in": 1141,
+ "tokens_out": 392
+}
