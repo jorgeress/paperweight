@@ -18,8 +18,8 @@ export const TaskPanel = ({ task, onGrant, isReadOnly }: Props) => {
           )}
         </tbody>
       </table>
-      <p className="small"><span className="label">actions</span> <span className="mono">{task.allowed_actions.join(", ")}</span>
-        {" "}<span className="label">privileged</span> <span className="mono">{task.privileged_actions.join(", ") || "none"}</span></p>
+      <p className="small"><span className="label">actions</span> <span className="mono">{task.allowed_actions.join(", ")}</span></p>
+      <p className="small"><span className="label">privileged</span> <span className="mono">{task.privileged_actions.join(", ") || "none"}</span></p>
       {task.instructions && <p className="small"><span className="label">notes</span> {task.instructions}</p>}
       {!isReadOnly && task.privileged_actions.includes("priv_open") && (
         <form className="grant" onSubmit={(e) => { e.preventDefault(); onGrant({ kind: "priv_open", params: { cage } }); }}>
