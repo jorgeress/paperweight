@@ -3,6 +3,8 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict
 
 OPERATOR = "operator"
+# note: perception adds one object observation with this field, holding the parcel condition
+CONDITION_FIELD = "condition"
 
 type ObservationKind = Literal["label_field", "free_text", "object"]
 

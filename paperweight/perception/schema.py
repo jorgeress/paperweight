@@ -2,6 +2,8 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
+type ParcelCondition = Literal["intact", "damaged", "wet", "open"]
+
 PERCEPTION_SCHEMA = {
     "type": "object",
     "properties": {
@@ -18,9 +20,10 @@ PERCEPTION_SCHEMA = {
                 "required": ["kind", "field", "text", "bbox"],
                 "additionalProperties": False,
             },
-        }
+        },
+        "parcel_condition": {"enum": ["intact", "damaged", "wet", "open"]},
     },
-    "required": ["observations"],
+    "required": ["observations", "parcel_condition"],
     "additionalProperties": False,
 }
 
@@ -34,3 +37,4 @@ class RawObservation(BaseModel):
 
 class RawPerception(BaseModel):
     observations: list[RawObservation]
+    parcel_condition: ParcelCondition
