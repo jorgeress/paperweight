@@ -6,7 +6,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import FileResponse, StreamingResponse
+from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from starlette.concurrency import run_in_threadpool
@@ -40,6 +40,16 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(lifespan=lifespan)
+
+
+@app.middleware("http")
+async def refuse_cross_site_writes(request: Request, call_next):
+    # threat: any page open in the browser can post a frame or a grant to the local console
+    # note: a bodyless post or a typeless blob is a simple request, so cors alone does not stop it
+    if request.method != "GET" and request.headers.get("sec-fetch-site", "same-origin") not in ("same-origin", "none"):
+        print(f"[console] refuse write path={request.url.path} site={request.headers['sec-fetch-site']}")
+        return JSONResponse({"detail": "cross-site request refused"}, status_code=403)
+    return await call_next(request)
 
 
 class PipelineChoice(BaseModel):
