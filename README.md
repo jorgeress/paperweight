@@ -8,7 +8,7 @@ destination. It can never change the goal, the routing or who is in charge. Ever
 action parameter has to cite where it came from, and a deterministic policy checks
 those citations before anything reaches the actuator.
 
-<!-- todo: demo gif of the real station -->
+![The sorting station: Arduino, gate servo, bin LEDs, arrival sensor and bins A, B, C](docs/station.gif)
 
 **Try it, no key needed:** the console can replay recorded Nemotron calls on the eval
 photos. After the install step in [Run locally](#run-locally):
